@@ -94,5 +94,6 @@ def top_coef(clf, vec, labels=['liberal', 'conservative'], n=10):
     for i in np.argsort(clf.coef_[0])[:n]:
         print('%20s\t%.2f' % (feats[i], clf.coef_[0][i]))
 
+
 if __name__ == "__main__":
     sys.exit(main())
