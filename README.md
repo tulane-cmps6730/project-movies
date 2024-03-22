@@ -1,10 +1,9 @@
 # CMPS 6730 Netflix Movie Recommendation
 
-This repository contains starter code for the final project in CMPS 4730/6730: Natural Language Processing at Tulane University.
+*This repository contains starter code for the final project in CMPS 4730/6730: Natural Language Processing at Tulane University.*
+*This code has been copied to our project repository as a skeleton for us to use for our project.*
 
-This code has been copied to our project repository as a skeleton for us to use for our project.
-
-Goals, methods, conclusions: 
+## Goals, methods, conclusions: 
 
 For our Project, we are building a Movie recomendation system. The project is built on an ensemble of methods: Firstly, Collaborative-Filtering filtering is a way to reccomend movies to a user, based off the preferences of that user. In this case, this would be the movies this specific user has rated.
 By aggregating the feature vector of each item (movie) a user has reviewed, we can build this user profile. From here we can use cosine similarity to compute the similarity between users. This already gives us a great start in predicting which movies a user may like, because odds are it is one that someone else
