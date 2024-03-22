@@ -1,10 +1,18 @@
-# CMPS 6730 Sample Project
+# CMPS 6730 Netflix Movie Recommendation
 
 This repository contains starter code for the final project in CMPS 4730/6730: Natural Language Processing at Tulane University.
 
-The code in this repository will be copied into your team's project repository at the start of class to provide a starting point for your project.
+This code has been copied to our project repository as a skeleton for us to use for our project.
 
-You should edit this file to include a summary of the goals, methods, and conclusions of your project.
+Goals, methods, conclusions: 
+
+For our Project, we are building a Movie recomendation system. The project is built on an ensemble of methods: Firstly, Collaborative-Filtering filtering is a way to reccomend movies to a user, based off the preferences of that user. In this case, this would be the movies this specific user has rated.
+By aggregating the feature vector of each item (movie) a user has reviewed, we can build this user profile. From here we can use cosine similarity to compute the similarity between users. This already gives us a great start in predicting which movies a user may like, because odds are it is one that someone else
+who shares their movie taste also likes.
+
+While user - user similarity is important, we also want to calculate the similarity of movie - movie. To build profiles for these movies that we will later compare, we must perform a variety of NLP techniques in order to obtain the various features of each movie. This mainly
+comes in the form of generating embeddings for the movie descriptions, as well as the mood, genre, and tag of the film. Capturing these features on a semantic level is important for comparison, and is relevant because films with genres like "thriller" and "horror" will now be considered similar. Simple categorical encoding fails to catch these dimensions.
+
 
 The structure of the code supports the following:
 
