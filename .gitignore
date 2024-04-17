@@ -108,3 +108,5 @@ ENV/
 .mypy_cache/
 
 notebooks/Data/NBA_PBP_2015-16.csv
+
+.env
