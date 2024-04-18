@@ -1,0 +1,21 @@
+<!-- templates/chat.html -->
+{% extends "base.html" %}  <!-- Ensure this extends the correct base template -->
+
+{% block content %}
+  <h2>Chat with our AI</h2>
+  <form method="POST" action="{{ url_for('chat') }}">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token }}  <!-- Include CSRF token for protection -->
+    <p>
+      {{ form.message.label() }} {{ form.message(size=32) }}  <!-- Render label properly -->
+    </p>
+    <p>
+      {{ form.submit() }}
+    </p>
+  </form>
+  {% if answer %}
+    <div><strong>Answer:</strong> {{ answer }}</div>
+  {% else %}
+    <p>Enter your question to get started.</p>
+  {% endif %}
+{% endblock %}

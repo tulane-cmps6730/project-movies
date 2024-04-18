@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""Demonstrating a very simple NLP project. Yours should be more exciting than this."""
 import click
 import glob
 import pickle
@@ -45,6 +44,7 @@ def web(port):
 
 
 # Initialize the OpenAI client with your API key
+load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=openai_api_key)
 
@@ -144,8 +144,6 @@ def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=
         return "No relevant context found for the question."
     
 #-------------------------------------------------------------------------------------------
-
-
 
 
 @main.command('hello')
