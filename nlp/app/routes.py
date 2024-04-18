@@ -6,6 +6,12 @@ from .. import clf_path
 import pickle
 import sys
 
+from cli import load_and_preprocess_documents, preprocess_text, answer_question
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+
+
 clf, vec = pickle.load(open(clf_path, 'rb'))
 print('read clf %s' % str(clf))
 print('read vec %s' % str(vec))
@@ -26,3 +32,21 @@ def index():
 								prediction=labels[pred], confidence='%.2f' % proba)
 		#return redirect('/index')
 	return render_template('myform.html', title='', form=form, prediction=None, confidence=None)
+'''
+documents = load_and_preprocess_documents('RAG_DATA')
+vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
+tfidf_matrix = vectorizer.fit_transform(documents)
+
+
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
+def index():
+    form = MyForm()
+    if form.validate_on_submit():
+        input_query = form.input_field.data
+        # Using the chat function to get response
+        response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "model_name", top_k=5)
+        flash(f"Response: {response}")
+        return render_template('index.html', title='Chat with AI', form=form, response=response)
+    return render_template('index.html', title='Chat with AI', form=form, response=None)
+'''

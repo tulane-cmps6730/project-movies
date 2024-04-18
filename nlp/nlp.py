@@ -15,7 +15,6 @@ import click
 import glob
 import pickle
 import sys
-
 import numpy as np
 import pandas as pd
 import re
@@ -24,6 +23,14 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import accuracy_score, classification_report
+
+
+from dotenv import load_dotenv
+import os
+from openai import OpenAI
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import spacy
 
 from . import clf_path, config
 
@@ -40,106 +47,143 @@ def web(port):
     """
     from .app import app
     app.run(host='0.0.0.0', debug=True, port=port)
+
+
+
+#setter up functions: ----------------------------------------------------------------------------------------------
+def preprocess_text(text):
+    nlp = spacy.load("en_core_web_sm")
+    # Parse the document using spaCy
+    doc = nlp(text.lower())  # Convert text to lower case
+
+    # Remove punctuation and stop words, and apply lemmatization
+    clean_tokens = [token.lemma_ for token in doc if not token.is_punct and not token.is_stop]
+
+    # Join the tokens back into a single string
+    clean_text = ' '.join(clean_tokens)
     
-@main.command('dl-data')
-def dl_data():
-    """
-    Download training/testing data.
-    """
-    data_url = config.get('data', 'url')
-    data_file = config.get('data', 'file')
-    print('downloading from %s to %s' % (data_url, data_file))
-    r = requests.get(data_url)
-    with open(data_file, 'wt') as f:
-        f.write(r.text)
+    return clean_text
+
+def load_and_preprocess_documents(directory):
+    documents = []
+    for filename in os.listdir(directory):
+        filepath = os.path.join(directory, filename)
+        if os.path.isfile(filepath):
+            with open(filepath, 'r', encoding='utf-8') as file:
+                text = file.read()
+                processed_text = preprocess_text(text)
+                documents.append(processed_text)
+    return documents
+
+def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
+    # Validate inputs
+    if not data or top_k <= 0:
+        return []
+
+    try:
+        # Transform the query to the same vector space as the documents
+        query_tf = vectorizer.transform([query])
+        
+        # Calculate cosine similarities between the query and all documents
+        similarities = cosine_similarity(query_tf, tfidf_matrix).flatten()
+
+        # Tokenize the query into keywords
+        query_keywords = set(query.lower().split())
+
+        # Prepare a list to store matches and their combined scores
+        matches = []
+
+        # Iterate over each document entry
+        for i, document in enumerate(data):
+            # Extract title from the document assuming it's the first sentence before the comma
+            title = document.split(',')[0].lower()
+            title_keywords = set(title.split())
+
+            # Calculate the number of query keywords that appear in the title
+            common_keywords = query_keywords.intersection(title_keywords)
+            keyword_count = len(common_keywords)
+
+            # Calculate a combined score
+            # Here, you might want to balance the importance of cosine similarity and keyword count
+            # For example, you could give a weight to keyword matches to adjust their influence
+            combined_score = similarities[i] + (keyword_count * 0.5)  # Adjust the weight (0.1) as needed
+
+            # Store the document along with its combined score
+            matches.append((document, combined_score))
+
+        # Sort by the combined scores in descending order
+        matches.sort(key=lambda x: x[1], reverse=True)
+
+        # Return the top_k most relevant documents based on the combined scores
+        return matches[:top_k]
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
+    
+# Function to answer questions using retrieved texts
+def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=200, stop_sequence=None):
+    retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents, top_k=top_k)
+    context = " ".join([text for text, _ in retrieved_texts])
     
 
-def data2df():
-    return pd.read_csv(config.get('data', 'file'))
+    if context:  # Check if there is any context retrieved
+        try:
+            # Create a chat completion using the question and context
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": "Answer the question based on the context below"},
+                    {"role": "user", "content": f"Context: {context}\n\nQuestion: {question}"}
+                ],
+                temperature=0,
+                max_tokens=max_tokens,
+                stop=stop_sequence,
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            return str(e)
+    else:
+        return "No relevant context found for the question."
 
-@main.command('stats')
-def stats():
-    """
-    Read the data files and print interesting statistics.
-    """
-    df = data2df()
 
-    '''
-    Editing to show the number of movies and average duration
 
-    Step 1: Convert duration strings to total minutes
-    Split the 'duration' string on space (' '), which gives us ['2h', '9m'] for '2h 9m'
-    Then we convert hours to minutes and add up to the minutes part
-    '''
-    def duration_to_minutes(duration):
-        parts = duration.split(' ')
-        minutes = 0
-        for part in parts:
-            if 'h' in part:
-                hours = int(part.replace('h', ''))
-                minutes += hours * 60
-            elif 'm' in part:
-                minutes += int(part.replace('m', ''))
-        return minutes
 
-    df['time_in_min'] = df['duration'].apply(duration_to_minutes)
 
-    '''
-    Step 2: Calculate the average duration in minutes
-    '''
+
+
+
+@main.command('chat')
+def chat():
+    """Interactive chat using the document retrieval system."""
+    load_dotenv()
+    api_key = os.getenv('OPENAI_API_KEY')
+    # Load the documents
+    documents = load_and_preprocess_documents('RAG_DATA')
+
+
+# Initialize and fit the TfidfVectorizer
+
+    documents = load_and_preprocess_documents('RAG_DATA')
+    vectorizer = TfidfVectorizer(max_features=10000, min_df = 2, stop_words = "english")
+    tfidf_matrix = vectorizer.fit_transform(documents)
+
+    def run_conversation():
+        while True:
+            try:
+                message = input("Ask me any questions you have about major and minors at tulane. It could be what courses are required for certain programs, or any general advice:\n")
+                if message.lower() == 'exit':
+                    print("Exiting chat...")
+                    break
+                model_name = "Your model name or placeholder if not using specific model API"  # Adjust as needed
+                answer = answer_question(message, documents, vectorizer, tfidf_matrix, model_name)
+                print("\nAnswer:", answer)
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                print("Sorry, I didn't understand that. Please try again.")
+
+    run_conversation()
     
-    avg_duration = df['time_in_min'].mean()
-
-    '''
-    Step 3: Convert the average duration back to hours and minutes for display
-    '''
-    avg_hours = int(avg_duration // 60)
-    avg_minutes = int(avg_duration % 60)
-
-    '''
-    Printing the number of movies and the average duration
-    '''
-    
-    print(f'Unique Movies Count: {len(df.names.unique())}')
-    print(f'Average Movie Duration: {avg_hours} hours and {avg_minutes} minutes')   
-
-@main.command('train')
-def train():
-    """
-    Train a classifier and save it.
-    """
-    # (1) Read the data...
-    df = data2df()    
-    # (2) Create classifier and vectorizer.
-    clf = LogisticRegression(max_iter=1000, C=1, class_weight='balanced')         
-    vec = CountVectorizer(min_df=5, ngram_range=(1,3), binary=True, stop_words='english')
-    X = vec.fit_transform(df.names)
-    y = df.mood.values
-    # (3) do cross-validation and print out validation metrics
-    # (classification_report)
-    do_cross_validation(clf, X, y)
-    # (4) Finally, train on ALL data one final time and
-    # train. Save the classifier to disk.
-    clf.fit(X, y)
-    pickle.dump((clf, vec), open(clf_path, 'wb'))
-    top_coef(clf, vec)
-
-def do_cross_validation(clf, X, y):
-    all_preds = np.zeros(len(y))
-    for train, test in StratifiedKFold(n_splits=5, shuffle=True, random_state=42).split(X,y):
-        clf.fit(X[train], y[train])
-        all_preds[test] = clf.predict(X[test])
-    print(classification_report(y, all_preds))    
-
-def top_coef(clf, vec, labels=['liberal', 'conservative'], n=10):
-    feats = np.array(vec.get_feature_names_out())
-    print('top coef for %s' % labels[1])
-    for i in np.argsort(clf.coef_[0])[::-1][:n]:
-        print('%20s\t%.2f' % (feats[i], clf.coef_[0][i]))
-    print('\n\ntop coef for %s' % labels[0])
-    for i in np.argsort(clf.coef_[0])[:n]:
-        print('%20s\t%.2f' % (feats[i], clf.coef_[0][i]))
-
 
 if __name__ == "__main__":
     sys.exit(main())

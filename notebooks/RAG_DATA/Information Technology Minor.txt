@@ -1,0 +1,3 @@
+Information Technology Minor Overview Requirements This 18 credit minor in Information Technology provides students with programming, database, and network fundamentals. Course List Course ID Title Credits CPST 1200 Fund of Info Systems & Tech 3 CPST 2200 Application Dev Fundamentals 3 CPST 2300 Database Fundamentals 3 CPST 2500 IT Infrastructure Fundamentals 3 CPST 2600 Networking Fundamentals 3 CPST 2700 Fund of Cybersecurity 3 Total Credit Hours 18
+
+Course List Course ID Title Credits CPST 1200 Fund of Info Systems & Tech 3 CPST 2200 Application Dev Fundamentals 3 CPST 2300 Database Fundamentals 3 CPST 2500 IT Infrastructure Fundamentals 3 CPST 2600 Networking Fundamentals 3 CPST 2700 Fund of Cybersecurity 3 Total Credit Hours 18
