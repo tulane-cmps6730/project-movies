@@ -145,10 +145,7 @@ def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=
     
 #-------------------------------------------------------------------------------------------
 
-@click.group()
-def main():
-    """Console script for nlp."""
-    pass
+
 
 
 @main.command('hello')
@@ -162,8 +159,19 @@ def chat():
 
     print("Chat Active")
     
+    script_dir = os.path.dirname(__file__)
+
+    print(script_dir)
+
+# Construct the path to the RAG_DATA directory
+    data_dir = os.path.join(script_dir, '..', 'notebooks', 'RAG_DATA')
+
+    print("Data Dir:", data_dir)
+# Use the absolute path to load and preprocess documents
+    documents = load_and_preprocess_documents(data_dir)
+
+    print("Data Loaded")
     
-    documents = load_and_preprocess_documents('./RAG_DATA')
     vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
     tfidf_matrix = vectorizer.fit_transform(documents)
 
@@ -173,11 +181,13 @@ def chat():
             if message.lower() == 'exit':
                 print("Exiting chat...")
                 break
-            answer = answer_question(message, documents, vectorizer, tfidf_matrix, "model_name")
+            answer = answer_question(message, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
             print("\nAnswer:", answer)
         except Exception as e:
             print(f"An error occurred: {e}")
             print("Sorry, I didn't understand that. Please try again.")
+
+
 
 if __name__ == "__main__":
     sys.exit(main())

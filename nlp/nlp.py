@@ -11,6 +11,7 @@ The nlp stats call shows two simple summary statistics, but the rest of the app 
 '''
 
 """Demonstrating a very simple NLP project. Yours should be more exciting than this."""
+'''
 import click
 import glob
 import pickle
@@ -187,3 +188,5 @@ def chat():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+'''

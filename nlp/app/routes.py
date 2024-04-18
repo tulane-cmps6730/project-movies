@@ -2,16 +2,19 @@ from flask import render_template, flash, redirect, session
 from . import app
 from .forms import MyForm
 from .. import clf_path
+import os
+from flask import current_app
 
 import pickle
 import sys
 
-from cli import load_and_preprocess_documents, preprocess_text, answer_question
+from nlp.cli import load_and_preprocess_documents, preprocess_text, answer_question
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 
-
+'''
 clf, vec = pickle.load(open(clf_path, 'rb'))
 print('read clf %s' % str(clf))
 print('read vec %s' % str(vec))
@@ -33,7 +36,13 @@ def index():
 		#return redirect('/index')
 	return render_template('myform.html', title='', form=form, prediction=None, confidence=None)
 '''
-documents = load_and_preprocess_documents('RAG_DATA')
+ # This gives you the app's root directory
+
+# Now construct the path to the RAG_DATA directory relative to the Flask app's root
+data_dir = os.path.join('..','..', 'notebooks', 'RAG_DATA')
+
+documents = load_and_preprocess_documents(data_dir)
+
 vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
 tfidf_matrix = vectorizer.fit_transform(documents)
 
@@ -47,6 +56,5 @@ def index():
         # Using the chat function to get response
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "model_name", top_k=5)
         flash(f"Response: {response}")
-        return render_template('index.html', title='Chat with AI', form=form, response=response)
-    return render_template('index.html', title='Chat with AI', form=form, response=None)
-'''
+        return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
+    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
