@@ -46,7 +46,6 @@ def web(port):
 # Initialize the OpenAI client with your API key
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
-#client = OpenAI(api_key=)
 
 def preprocess_text(text):
     nlp = spacy.load("en_core_web_sm")
