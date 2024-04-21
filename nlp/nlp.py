@@ -44,7 +44,7 @@ def main(args=None):
 @click.option('-p', '--port', required=False, default=5000, show_default=True, help='port of web server')
 def web(port):
     """
-    Launch the flask web app for the Movie Recommendation System.
+    Launch the flask web app for the app.
     """
     from .app import app
     app.run(host='0.0.0.0', debug=True, port=port)

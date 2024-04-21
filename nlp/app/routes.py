@@ -68,7 +68,7 @@ def index():
     if form.validate_on_submit():
         input_query = form.input_field.data
         # Using the chat function to get response
-        response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo", top_k=5)
+        response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
         flash(f"Response: {response}")
         return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
     return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
@@ -76,15 +76,15 @@ def index():
 
 
 
-@app.route('/chat', methods=['GET', 'POST'])
-def chat():
-    form = MyForm()
-    if form.validate_on_submit():
-        message = form.message.data
-        # Assuming 'documents' and 'tfidf_matrix' are available here
-        # If not, you'll need to load and preprocess them first
-        answer = answer_question(message, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
-        # Pass the answer back to the template
-        return render_template('chat.html', form=form, answer=answer)
-    # Initial page load or not a POST request
-    return render_template('chat.html', form=form, answer=None)
+# @app.route('/chat', methods=['GET', 'POST'])
+# def chat():
+#     form = MyForm()
+#     if form.validate_on_submit():
+#         message = form.input_field.data
+#         # Assuming 'documents' and 'tfidf_matrix' are available here
+#         # If not, you'll need to load and preprocess them first
+#         answer = answer_question(message, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
+#         # Pass the answer back to the template
+#         return render_template('chat.html', form=form, answer=answer)
+#     # Initial page load or not a POST request
+#     return render_template('chat.html', form=form, answer=None)
