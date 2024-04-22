@@ -46,6 +46,8 @@ def web(port):
 # Initialize the OpenAI client with your API key
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
+# Initialize the OpenAI client with your API key
+client = OpenAI(api_key=openai_api_key)
 
 def preprocess_text(text):
     nlp = spacy.load("en_core_web_sm")
@@ -70,6 +72,11 @@ def load_and_preprocess_documents(directory):
                 processed_text = preprocess_text(text)
                 documents.append(processed_text)
     return documents
+
+def load_documents(filepath):
+    with open(filepath, 'rb') as file:
+        return pickle.load(file)
+
 
 def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
     # Validate inputs
@@ -151,8 +158,9 @@ def hello():
 
 @main.command('chat')
 def chat():
+    
     """Interactive chat using the document retrieval system."""
-    load_dotenv()
+    
 
     print("Chat Active")
     
@@ -165,7 +173,8 @@ def chat():
 
     print("Data Dir:", data_dir)
 # Use the absolute path to load and preprocess documents
-    documents = load_and_preprocess_documents(data_dir)
+    documents = load_documents("project-movies/nlp/app/pre_processed/processed_documents.pkl")
+
 
     print("Data Loaded")
     
