@@ -57,8 +57,18 @@ current_directory = os.path.dirname(current_file_path)
 # Construct the path to the RAG_DATA directory relative to the current file
 data_dir = os.path.join(current_directory, 'RAG_DATA')
 
-# Now use this path to load and preprocess documents
-documents = load_documents("project-movies/nlp/app/pre_processed/processed_documents.pkl")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Set the path for the pre_processed folder
+pre_processed_folder = os.path.join(script_dir, 'pre_processed')
+
+# Set the path for the processed documents file
+processed_documents_path = os.path.join(pre_processed_folder, 'processed_documents.pkl')
+
+# Assuming you have a function defined as load_documents to load your documents
+documents = load_documents(processed_documents_path)
+    
 
 vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
 tfidf_matrix = vectorizer.fit_transform(documents)
