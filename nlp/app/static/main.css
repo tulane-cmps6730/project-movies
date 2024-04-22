@@ -1,20 +1,129 @@
+/* Base layout styles */
 body {
-  margin: 50px;
-  padding: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
+  font-family: 'Times New Roman', serif;
+  color: #333;
+  background-color: #e6e8f4; /* Subtle background color */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-/*
- * Formatting the header area
- */
+
+/* Utilize the academic color theme */
+h1, title {
+  color: darkgreen;
+}
+
+a {
+  color: gold;
+}
+
+a:hover {
+  color: olive;
+}
+
+/* Style the header */
 header {
-  background-color: #DFB887;
-  height: 35px;
-  width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
+  background: darkgreen;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Style the main title */
+div > h1 {
+  font-size: 2em;
+  color: #004400; /* Dark green */
+}
+
+hr {
+  border-color: gold;
+  margin-top: 0.5rem;
+}
+
+/* Form styles */
+form {
+  background: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px; /* Rounded corners for the form */
+}
+
+form p {
+  margin-bottom: 1rem;
 }
 
 label {
-  color: black;
+  display: block;
+}
+
+input[type='text'],
+textarea {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+input[type='submit'] {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px; /* Rounded corners for buttons */
+}
+
+input[type='submit']:hover {
+  background-color: #005500;
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 768px) {
+  form {
+    width: 95%;
+  }
+}
+
+/* Messages and errors */
+.flashes, .form.errors {
+  list-style: none;
+  padding: 1rem;
+  background: lightyellow;
+  border-left: 5px solid gold;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.flashes li, .form.errors {
+  margin-bottom: 0.5rem;
+  color: darkred;
+}
+
+/* AI response box */
+div.ai-response {
+  background-color: #f4f4f4; /* Light grey background */
+  border: 1px solid #ddd;
+  border-left: 4px solid darkgreen;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style the AI response title */
+div.ai-response strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: darkgreen;
+}
+
+/* Add padding to the bottom for better spacing */
+body {
+  padding-bottom: 50px;
 }
