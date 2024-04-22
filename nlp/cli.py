@@ -174,7 +174,7 @@ def chat():
     print("Data Dir:", data_dir)
 # Use the absolute path to load and preprocess documents
     documents = load_documents("project-movies/nlp/app/pre_processed/processed_documents.pkl")
-
+    
 
     print("Data Loaded")
     
