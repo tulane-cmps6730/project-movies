@@ -125,6 +125,11 @@ def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
         return []
     
 # Function to answer questions using retrieved texts
+
+
+
+
+# Function to answer questions using retrieved texts
 def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=200, stop_sequence=None):
     retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents, top_k=top_k)
     context = " ".join([text for text, _ in retrieved_texts])
@@ -148,6 +153,8 @@ def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=
             return str(e)
     else:
         return "No relevant context found for the question."
+
+
     
 #-------------------------------------------------------------------------------------------
 
@@ -166,14 +173,14 @@ def chat():
     
     script_dir = os.path.dirname(__file__)
 
-    print(script_dir)
+# Construct the path to the "pre_processed" folder
+    pre_processed_folder = os.path.join(script_dir, 'app', 'pre_processed')
 
-# Construct the path to the RAG_DATA directory
-    data_dir = os.path.join(script_dir, '..', 'notebooks', 'RAG_DATA')
+# Set the path for the processed documents file
+    processed_documents_path = os.path.join(pre_processed_folder, 'processed_documents.pkl')
 
-    print("Data Dir:", data_dir)
-# Use the absolute path to load and preprocess documents
-    documents = load_documents("project-movies/nlp/app/pre_processed/processed_documents.pkl")
+# Load the processed documents
+    documents = load_documents(processed_documents_path)
     
 
     print("Data Loaded")
