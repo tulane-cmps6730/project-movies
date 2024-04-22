@@ -2,14 +2,17 @@ from flask import render_template, flash, redirect, session
 from . import app
 from .forms import MyForm
 
+
 from .. import clf_path
+import os
+from flask import current_app
 import os
 from flask import current_app
 
 import pickle
 import sys
 
-from nlp.cli import load_and_preprocess_documents, preprocess_text, answer_question
+from nlp.cli import load_and_preprocess_documents, preprocess_text, answer_question, load_documents
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from flask import render_template, request, redirect, url_for
@@ -55,7 +58,7 @@ current_directory = os.path.dirname(current_file_path)
 data_dir = os.path.join(current_directory, 'RAG_DATA')
 
 # Now use this path to load and preprocess documents
-documents = load_and_preprocess_documents(data_dir)
+documents = load_documents("project-movies/nlp/app/pre_processed/processed_documents.pkl")
 
 vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
 tfidf_matrix = vectorizer.fit_transform(documents)
