@@ -82,9 +82,11 @@ def index():
         input_query = form.input_field.data
         # Using the chat function to get response
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
-        flash(f"Response: {response}")
+        # Directly pass the response to the template
         return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
+    # When there is no POST request or form submission, pass None for response
     return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
+
 
 
 

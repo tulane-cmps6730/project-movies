@@ -1,4 +1,3 @@
-
 <html>
   <head>
     {% if title %}
@@ -10,11 +9,12 @@
   </head>
   <body>
 
-    <div>
+    <header class="header">
+      <img src="{{ url_for('static', filename='Tulane_University_Logo.svg.png') }}" alt="Tulane Logo" class="tulane-logo">
       <h1>
         Welcome to Tulane's AI'dvisor!
-      <h1>
-    </div>
+      </h1>
+    </header>
     <hr>
 
     {% if form.errors %}
@@ -23,40 +23,35 @@
 
     <form action="" method="post" novalidate>
       {{ form.hidden_tag() }}
-      <p>
-        {{ form.input_field.label }} 
-      </p>
-      <p>  
-        {{ form.input_field(size=40) }}
 
-      </p>
-      <p>
-        {{ form.submit(size = 20)}}
-      </p>
+      <!-- ... -->
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+
+      <div class="form-group">
+        <div class="input-section">
+          <h3>{{ form.input_field.label }}</h3>
+          <p>{{ form.input_field(size=40, class_="form-control") }}</p>
+          <p>{{ form.submit(class_="btn btn-primary") }}</p>
+        </div>
+
+        <!-- Example prompts section -->
+        <div class="example-prompts">
+          <h3>Try asking questions like:</h3>
+          <ul>
+            <li>What are the core requirements for a Computer Science major?</li>
+            <li>How can I check my current academic standing?</li>
+            <li>What extracurriculars are available in the Engineering department?</li>
+          </ul>
+        </div>
+      </div>
     </form>
+    <!-- ... -->
 
-    {% with messages = get_flashed_messages() %}
-        {% if response %}
-        <div class="ai-response"><strong>AI Response:</strong> {{ response }}</div>
-        {% endif %}
-    {% endwith %} 
-    
-    <!--
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class="flashes">
-        {% for message in messages %}
-          <li>{{ message }}</li>
-        {% endfor %}
-        </ul>
+
+      {% if response %}
+        <div class="ai-response"><strong>AI Response:</strong> {{ response|safe }}</div>
       {% endif %}
-    {% endwith %}
 
-      <div><strong>AI Answer:</strong> <br> {{ answer }}</div>
-      
--->
-
-    
   </body>
 </html>
-
