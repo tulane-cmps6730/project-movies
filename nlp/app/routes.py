@@ -77,6 +77,7 @@ tfidf_matrix_programs = vectorizer_programs.fit_transform(programs_documents)
 vectorizer_courses = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
 tfidf_matrix_courses = vectorizer_courses.fit_transform(courses_documents)
 
+
 #Default data
 #tfidf_matrix = tfidf_matrix_programs
 
@@ -88,6 +89,8 @@ def index():
         input_query = form.input_field.data
         # Using the chat function to get response
         search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
+        
+		
         
         k_val = 4
         
@@ -107,13 +110,14 @@ def index():
             documents = programs_documents
             
             
-            
-
+        
+		
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo", top_k=k_val)
         # Directly pass the response to the template
+        print(search_mode)
         return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
     # When there is no POST request or form submission, pass None for response
-    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None, search_mode=search_mode)
+    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
 
 
 

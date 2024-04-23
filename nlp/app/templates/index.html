@@ -23,7 +23,7 @@
 
     <form action="" method="post" novalidate>
       {{ form.hidden_tag() }}
-
+      
       <!-- ... -->
     <form action="" method="post" novalidate>
       {{ form.hidden_tag() }}
@@ -32,23 +32,21 @@
         <div class="input-section">
           <h3>{{ form.input_field.label }}</h3>
           <p>{{ form.input_field(size=40, class_="form-control") }}</p>
+       
           <p>{{ form.submit(class_="btn btn-primary") }}</p>
         </div>
       
+       
         <script>
           document.addEventListener('DOMContentLoaded', (event) => {
     updateLabel();  // Set the initial state when the document loads
 });
 
-          function updateLabel() {
-              var checkBox = document.getElementById("search-toggle");
-              var label = document.getElementById("toggle-label-text");
-              if (checkBox.checked == true){
-                  label.innerHTML = "Classes Expert"; // Text when toggle is ON
-              } else {
-                  label.innerHTML = "Programs Expert"; // Text when toggle is OFF
-              }
-          }
+function updateLabel() {
+    var checkBox = document.getElementById("search-toggle");
+    var label = document.getElementById("toggle-label-text");
+    label.innerHTML = checkBox.checked ? "Classes Expert" : "Programs Expert";
+}
 
           </script>
 
@@ -57,21 +55,34 @@
   <div class="toggle-switch">
     <!-- Label displayed above the toggle button -->
     <label id="toggle-label-text" class="toggle-label-text">{{ 'Classes Expert' if search_mode else 'Programs Expert' }}</label> <!-- Default text -->
-    <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox" onchange="updateLabel()">
+    <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox" onchange="updateLabel()" {{ 'checked' if search_mode }}>
     <label for="search-toggle" class="toggle-label"></label>
 </div>
 
       
     </div>
         <!-- Example prompts section -->
-        <div class="example-prompts">
+        <div class="sample-questions">
+          
           <h3>Try asking questions like:</h3>
           <ul>
             <li>What are the core requirements for a Computer Science major?</li>
             <li>How can I check my current academic standing?</li>
             <li>What extracurriculars are available in the Engineering department?</li>
           </ul>
+          <h3>Switch to class expert mode, and try:</h3>
+          <ul>
+            <li>What classses at Tulane cover topics in Artificial Intelligence?</li>
+            <li>What are some interactive discussion-based classes?</li>
+            <li>Compare and contrast Course A with Course B?</li>
+          </ul>
         </div>
+        
+        <!-- Example prompts section -->
+        
+          
+       
+
       </div>
     </form>
     <!-- ... -->
