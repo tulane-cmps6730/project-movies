@@ -1,0 +1,2 @@
+MATH 4060Real Analysis II(3)An in-depth treatment of multivariable calculus. Extends the material covered in Mathematics 2210. Chain rule, inverse and implicit function theorems, Riemann integration in Euclidean n-space, Gauss-Green-Stokes theorems, applications.
+Prerequisite(s):MATH 3050and3090.Prerequisite(s):MATH 3050and3090.

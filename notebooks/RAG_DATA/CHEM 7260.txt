@@ -1,0 +1,1 @@
+CHEM 7260Crystallography(3)Basic principles of single crystal x-ray diffraction and their applications to the determination of the structures of small molecules.  Each student will collect x-ray data on a crystal and determine the structure of the molecule.

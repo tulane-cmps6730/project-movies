@@ -1,0 +1,3 @@
+CELL 3215Physiology Lab(1)This class includes a series of on-line laboratory simulations designed to demonstrate basic principles of Physiology. The course is meant to follow and reinforce material from Physiology,CELL 3210, taught in the Fall semester. Each class will start with a brief discussion of the material, how it relates to the physiology of the organism as a whole, and the clinical significance. Students will spend the rest of the class conducting the exercises for that day's lab. The results are saved as a PDF, printed and turned in to the instructor at the next class.
+Prerequisite(s):CELL 3210*.
+(* May be taken concurrently.)Prerequisite(s):CELL 3210*.*May be taken concurrently.

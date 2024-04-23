@@ -1,0 +1,1 @@
+PSYC 6130Psyc Appl Multivar Stats(3)Design and analysis of experiments in the behavioral sciences involving multiple predictor and criterion variables. Extensive use is made of Tulane computer facilities but no programming knowledge is required.

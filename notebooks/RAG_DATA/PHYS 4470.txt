@@ -1,0 +1,2 @@
+PHYS 4470Intro Quantum Mechanics(3)The postulates of quantum mechanics, Schroedinger equation, operator methods, angular momentum, fermion and boson systems, and Heisenberg formulations, applications to simple physical systems.
+Prerequisites:PHYS 2350andMATH 2210.Prerequisite(s):PHYS 2350andMATH 2210.

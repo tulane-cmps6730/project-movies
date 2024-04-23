@@ -1,0 +1,3 @@
+CENG 2505Intro Biotech Lab(1)This course is designed to introduce students to essential laboratory skills and modern techniques utilized in the field of biotechnology. These include aseptic technique, microbial and mammalian cell culturing, flow cytometry, and engineering and analysis of genes in E. coli.  Laboratory notebook maintenance, executing protocols, analyzing data and teamwork are emphasized. This course is intended for students without any prior research experience.  
+
+Corequisite(s):CENG 2500.Corequisite(s):CENG 2500.

@@ -1,0 +1,2 @@
+MATH 2240Intro To Applied Math(4)An introduction to the techniques of applied mathematics. The emphasis will be on the mathematical modeling by differential equations of a variety of applications in the natural sciences. Numerical and graphical techniques for finding both quantitative and qualitative information about solutions will be discussed and implemented on the computer. No programming experience is assumed. Note: Students may not receive credit for both 2240 and 4240.
+Prerequisite(s):MATH 1220or1310.Prerequisite(s):MATH 1220or1310.Corequisite(s):MATH 2241.

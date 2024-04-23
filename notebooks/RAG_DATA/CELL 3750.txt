@@ -1,0 +1,3 @@
+CELL 3750Cell Biology(3)An examination of the structure and function of eukaryotic cells. Emphasis is placed on mechanisms of intracellular and transmembrane transport, cellular control, and intercellular and intracellular signaling. Experimental methods and applications will be emphasized. 
+
+Prerequisite(s):CELL 3030.Prerequisite(s):CELL 3030.

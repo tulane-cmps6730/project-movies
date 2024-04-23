@@ -179,3 +179,62 @@ body {
     font-size: 0.8rem; /* Slightly smaller font-size for the prompts */
   }
 }
+
+/* Base style for the switch (the area around the slider) */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;  /* Width of the outside box */
+  height: 34px; /* Height of the outside box */
+  margin: 10px; /* Space around the slider */
+}
+
+/* Hides the checkbox visually and makes it accessible for screen readers */
+.toggle-switch .toggle-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style for the slider */
+.toggle-switch .toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc; /* Light grey background */
+  transition: .4s; /* Animation to slide the toggle */
+  border-radius: 34px; /* Rounded borders for the toggle and slider */
+}
+
+.toggle-switch .toggle-label:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Height of the slider */
+  width: 26px; /* Width of the slider */
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Slider is white */
+  transition: .4s; /* Smooth transition for the slider */
+  border-radius: 50%; /* Make the slider round */
+}
+
+/* When the checkbox is checked, change the background color and move the slider */
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #4CAF50; /* Green background to indicate "on" state */
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+  transform: translateX(26px); /* Move the slider to the right */
+}
+
+.toggle-switch .toggle-label-text {
+    position: absolute; /* Absolute positioning */
+    top: -40px; /* Position the label 40px above the top boundary of the toggle-switch */
+    left: 0;  /* Center the label horizontally */
+    right: 0;
+    text-align: center;
+    font-size: small;
+}

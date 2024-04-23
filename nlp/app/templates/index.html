@@ -34,7 +34,30 @@
           <p>{{ form.input_field(size=40, class_="form-control") }}</p>
           <p>{{ form.submit(class_="btn btn-primary") }}</p>
         </div>
+      
+        <script>
+          function updateLabel() {
+              var checkBox = document.getElementById("search-toggle");
+              var label = document.getElementById("toggle-label-text");
+              if (checkBox.checked == true){
+                  label.innerHTML = "Classes Expert"; // Text when toggle is ON
+              } else {
+                  label.innerHTML = "Programs Expert"; // Text when toggle is OFF
+              }
+          }
+          </script>
 
+        <!-- Slider Toggle for "Courses" or "Majors/Minors" -->
+  <!-- Slider Toggle for "Courses" or "Majors/Minors" -->
+  <div class="toggle-switch">
+    <!-- Label displayed above the toggle button -->
+    <label id="toggle-label-text" class="toggle-label-text">Programs Expert</label> <!-- Default text -->
+    <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox" onchange="updateLabel()">
+    <label for="search-toggle" class="toggle-label"></label>
+</div>
+
+      
+    </div>
         <!-- Example prompts section -->
         <div class="example-prompts">
           <h3>Try asking questions like:</h3>

@@ -1,0 +1,2 @@
+CMPS 3310Logic in Computer Science(3)This course is an introduction to logic and its applications in computer science. The topics covered include soundness and completeness of propositional logic, predicate logic, linear time temporal logic and branching time temporal logics, and their expressive power, frameworks for software verification, Hoare triples, partial and total correctness, modal logics and agents, and binary decision diagrams.
+Prerequisite(s):CMPS 2200and (CMPS 2170orMATH 2170).Prerequisite(s):CMPS 2200and (CMPS 2170orMATH 2170).

@@ -1,0 +1,1 @@
+ECON 6230Econometrics(3)Building on the statistical techniques learned in Economics 3230, the course concentrates on the principal methods used to correct violations of the basic assumptions of ordinary least squares. Master's-level version ofECON 4230. Students should consult with Professor for additional assignments & different grading criteria.

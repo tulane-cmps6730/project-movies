@@ -1,0 +1,3 @@
+PHYS 1320General Physics II(4)A continuation ofPHYS 1310. Emphasis on electricity and magnetism, with selected topics in optics and modern physics. The laboratory includes a review of techniques for problem solving, as well as experiments in classical physics.
+Prerequisite(s):PHYS 1310.
+Corequisite(s):PHYS 1321.Prerequisite(s):PHYS 1310.Corequisite(s):PHYS 1321.

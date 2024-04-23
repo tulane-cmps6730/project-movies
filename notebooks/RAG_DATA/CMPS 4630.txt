@@ -1,0 +1,2 @@
+CMPS 4630Computational Bio & Bioinform(3)This course is an introduction to computational methods in molecular biology. Topics covered include: sequence analysis and alignment, sequencing technologies, genome and metagenomic sequencing, protein structure and structure prediction, and phylogenetic analysis. No prior background in biology is assumed.
+Prerequisite(s): (CMPS 2170orMATH 2170) andCMPS 2200.Prerequisite(s):(CMPS 2170orMATH 2170) andCMPS 2200.

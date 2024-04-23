@@ -1,0 +1,2 @@
+PHYS 4230Thermal Physics(3)A study of the physical properties of matter where temperature is an important variable. The laws of thermodynamics, equations of state, thermodynamic potentials. Kinetic theory of gases. Elementary statistical postulates. Ensembles, the partition function. Entropy, phase transitions.
+Prerequisites:PHYS 1210and1220, or 1310 and 1320.Prerequisite(s):(PHYS 1210) and (PHYS 1220) or (PHYS 1310) and (PHYS 1320).

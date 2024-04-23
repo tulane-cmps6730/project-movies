@@ -1,0 +1,4 @@
+EBIO 2072Quantitative, Population & Evolutionary Genetics(1)This course will introduce students to fundamental principles concerning the application of genetic analysis to quantitative, population and evolutionary genetics.
+
+If you have takenEBIO 2070/2071, then you do not need to take this course: it is designed only for those students who have takenCELL 2050and wish to pursue a major within the Department of EEB. This course includes those topics missing fromCELL 2050that will help prepare all EEB majors for upper-level courses offered within the department including Processes of Evolution, Molecular Ecology and Evolution, Speciation, Systematics, Evolutionary Genomics, etc.
+Prerequisites:EBIO 1010,EBIO 1015, andCELL 2050.Prerequisite(s):EBIO 1010,1015andCELL 2050.

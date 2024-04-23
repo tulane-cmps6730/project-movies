@@ -1,0 +1,1 @@
+CENG 6400Intro. To Gene Therapy(3)A survey into the fundamental aspects of gene delivery and their application to gene therapy. Topics include various gene carriers, carrier/DNA interaction and complex formation, complex interactions with cells and cell structures, targeting, gene therapy applications, host response. A knowledge of cell and molecular biology is not required.

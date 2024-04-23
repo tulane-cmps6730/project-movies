@@ -1,0 +1,1 @@
+ESSC 6012Physical Protection Systems(3)An introductory course to the systematic discipline of Physical Protection System design, implementation, and testing. The methodology presented is scalable for small, medium, and large security applications ranging from home security systems to safeguarding and securing sensitive nuclear facilities.

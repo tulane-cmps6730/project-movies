@@ -1,0 +1,1 @@
+CHEM 7470Adv Organic Chem Nucleic Acids(3)This course provides a background to understanding the structure of nucleic acids and the forces involved in their binding and recognition.  A particular focus involves the how to design sequences that enable binding, including topics such as using aptamers for selective binding and recognition.

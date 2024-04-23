@@ -1,0 +1,2 @@
+CMPS 3260Advanced Algorithms(3)This course focuses on advanced techniques in the design and analysis of algorithms and illustrates how they are used in deriving a variety of now-classic results. Topics include graph algorithms, randomized algorithms, parallel computing, linear programming, and approximation algorithms.
+Prerequisite(s):CMPS 2200.Prerequisite(s):CMPS 2200.

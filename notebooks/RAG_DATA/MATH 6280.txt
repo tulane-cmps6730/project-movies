@@ -1,0 +1,1 @@
+MATH 6280Information Theory(3)This introduction to information theory will address fundamental concepts, such as information, entropy, relative entropy, and mutual information. In addition to giving precise definitions of these concepts, the course will include a probabilistic approac

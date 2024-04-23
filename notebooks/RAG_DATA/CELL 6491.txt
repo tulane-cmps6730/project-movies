@@ -1,0 +1,1 @@
+CELL 6491Anatomy Lab(0)Co-requisite lab forCELL 6491AnatomyCorequisite(s):CELL 6490.

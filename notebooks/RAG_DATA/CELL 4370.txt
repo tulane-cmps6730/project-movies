@@ -1,0 +1,3 @@
+CELL 4370Molecular Neurobiology(3)Introduction to the molecular biology of neurons and neuronal functions. Topics of study will include: the molecular composition of nerve cells, and how this provides a basis for their functional properties; their synaptic connectivity; how they receive, transmit, and retain information at a molecular level. Studies will focus on current research in the field of molecular neurobiology. 
+
+Prerequisite(s):CELL 3310,3320,NSCI 3310or3320.Prerequisite(s):CELL 3310,3320,NSCI 3310or3320.

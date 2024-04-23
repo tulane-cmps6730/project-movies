@@ -1,0 +1,2 @@
+EBIO 4460Biodiversity and Environmental Informatics(3)This upper-level course explores theory and practice in biodiversity informatics, an emerging field of cyber-enabled discovery and innovation. Topics to be discussed include natural history collection databases and networks, data mining, morphological databases and ontology, digital libraries, phyloinformatics, cybertaxonomy, Georeferencing methods and algorithms, GIS and predictive niche modeling.
+Prerequisite(s):EBIO 3080and (CELL 2050orEBIO 2070).Prerequisite(s):EBIO 3080and (CELL 2050orEBIO 2070).

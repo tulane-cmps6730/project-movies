@@ -1,0 +1,2 @@
+ENGP 2430Mechanics of Materials(3)Concepts of stress and strain. Generalized Hooke's Law. Mohr's circle. Formulations for axial, shear, bending, torsion, and combined stresses applied to tension members, pinned points, symmetric and unsymmetric beams, and shafts. Euler buckling criteria for columns.
+Prerequisites:

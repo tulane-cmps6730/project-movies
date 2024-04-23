@@ -1,0 +1,3 @@
+CENG 3390Transport II: Heat and Mass(3)The analysis of problems in conductive, convective, and radiative heat transfer. The formulation and solution of heat and mass transfer problems by means of shell balances. Exact and numerical solutions to heat and mass transfer problems. Correlations for convective heat transfer. Analogies between heat and mass transfer. The application of basic principles of heat/mass transfer to heat exchange, evaporation, condensation, boiling and drying operations.
+Prerequisite(s):CENG 2320andMATH 2240*.
+* May be taken concurrently.Prerequisite(s):CENG 2320andMATH 2240*.*May be taken concurrently.

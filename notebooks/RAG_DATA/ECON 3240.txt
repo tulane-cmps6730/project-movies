@@ -1,0 +1,2 @@
+ECON 3240Econometrics Lab(1)An introduction to the use of a statistical programming language.  Students will learn skills such as graphing, regression analysis, and data manipulation.  Ways to avoid common mistakes and good programming techniques are also provided.
+Prerequisite(s):ECON 1010.Prerequisite(s):ECON 1010.

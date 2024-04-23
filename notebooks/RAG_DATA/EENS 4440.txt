@@ -1,0 +1,2 @@
+EENS 4440Introduction to Geophysics(3)Introduction to Geophysics This course provides an introduction to applied geophysical methods, with a focus on the application of these techniques in environmental and engineering studies.   The material will provide the technical foundation needed to understand the commonly used geophysical methods: gravity, magnetics, electrical resistivity, seismic, electromagnetics, and ground penetrating radar.
+Prerequisite(s):MATH 1220andEENS 1110.Prerequisite(s):MATH 1220andEENS 1110.

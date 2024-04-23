@@ -1,0 +1,2 @@
+CMPS 4750Computer Networks(3)The objective of the course is to introduce students to the core concepts and analytic techniques in the design and analysis of computer networks and network protocols. We will explain both how computer networks work using the Internet as the paradigm and why they work from an optimization and control perspective.
+Prerequisite(s): (CMPS 2170orMATH 2170) andCMPS 2200.Prerequisite(s):(CMPS 2170orMATH 2170) andCMPS 2200.

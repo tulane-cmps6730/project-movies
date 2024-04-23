@@ -1,0 +1,1 @@
+PHIL 1210Elementary Symbolic Logic(3)The course concerns techniques of analyzing sentences and arguments by uncovering the formal structures and relations which underlie them. This involves translating ordinary language into the symbolic formulas of elementary logical systems and proving formalized arguments.

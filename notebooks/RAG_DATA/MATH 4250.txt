@@ -1,0 +1,2 @@
+MATH 4250Math Found Comp Security(3)This course studies the mathematics underlying computer security, including both public key and symmetric key cryptography, crypto-protocols and information flow. The course includes a study of the RSA encryption scheme, stream and clock ciphers, digital signatures and authentication. It also considers semantic security and analysis of secure information flow.
+Prerequisite(s): (MATH 2170orCMPS 2170) andMATH 3110.Prerequisite(s):(MATH 2170orCMPS 2170) and (MATH 1220or1310).

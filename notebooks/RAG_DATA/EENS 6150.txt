@@ -1,0 +1,2 @@
+EENS 6150Intro to GIS(4)This course is designed to give students a general understanding of geographic information systems (GIS) and the Environmental Systems Research Institute (ESRI) ArcGIS software. The approach taken is detailed instruction in utilizing ArcGIS to solve probl
+Corequisite(s):EENS 6151.Corequisite(s):EENS 6151.

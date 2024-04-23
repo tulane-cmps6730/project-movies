@@ -1,0 +1,1 @@
+CENG 6150Reactor Design(3)The design and analysis of chemical, biological, and polymerization reactor systems are achieved by application of the principles of chemical kinetics and equilibrium coupled with mass and energy transport. Specific areas of study include kinetics, ideal

@@ -1,0 +1,1 @@
+CELL 4440Advanced Molecular Biology(3)Current topics in molecular biology with emphasis on higher-order chromatin structure and transcription, mutability, and DNA repair mechanisms in prokaryotes and eukaryotes. Other topics include: nuclear hormone receptors, HOX gene activation in development, RNAi, and genome organization.Prerequisite(s):CELL 3030,6030or6030.

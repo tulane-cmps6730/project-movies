@@ -1,0 +1,2 @@
+NSCI 4350Developmental Neurobiology(3)A broad overview of the different stages of neural development. Examination of the molecular aspects of developmental neurobiology, with reference to some important signaling pathways involved in neural growth and specification. Particular attention will be given to those active research fields, such as growth cone guidance and collapse and activity-dependent development, and applications of these to injury and disease.
+Prerequisite(s):

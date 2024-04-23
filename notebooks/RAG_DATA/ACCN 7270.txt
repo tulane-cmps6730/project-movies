@@ -1,0 +1,1 @@
+ACCN 7270Advanced Risk Analytics(3)This course explores concepts of risk and uncertainty applied to the financial management of organizations in achieving business objectives and strategies. Emphasis is placed on the role of data-driven accounting measurement and reporting in the management of such risks.Prerequisite(s):ACCN 2010,6030or6050.

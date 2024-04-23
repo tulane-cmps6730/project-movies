@@ -1,0 +1,1 @@
+PMBA 6500Decision Models(2)- examines the art of solving problems under uncertainty. Course topics include descriptive statistics, probability, sampling distributions, confidence intervals, hypothesis testing and simple and multiple regressions. Methods are applied to management problems drawn from marketing, finance, economics, organizational behavior, and operations management.

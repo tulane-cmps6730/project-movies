@@ -1,0 +1,3 @@
+BMEN 3932Elements of  BMEN Design(3)This course develops the fundamental aspects of the mechanical performance of devices and components. Topics include a review of stress analysis, failure criteria, fatigue analysis and stress concentrations, as well as the mechanical behavior of fasteners, welded joints, spring selection, bearing design, and introduction to finite element analysis; with applications to biomedical engineering.
+
+Prerequisite(s):ENGP 2430.Prerequisite(s):ENGP 2430.

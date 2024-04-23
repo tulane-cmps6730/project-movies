@@ -1,0 +1,1 @@
+ECON 6070Intro Mathematical Econ(3)A presentation of the primary mathematical techniques used in modern economics: calculus, linear algebra, and set theory.

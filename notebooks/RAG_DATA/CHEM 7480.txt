@@ -1,0 +1,2 @@
+CHEM 7480Medicinal Chemistry(3)Medicinal chemistry deals with the method of developing new drugs. This class will discuss the drug development process, techniques that are used to develop new drugs (e.g., screening, computer modelling), and the mode of action of existing drugs.
+The prerequisites are successful completion of an organic chemistry course (e.g.,CHEM 2410) and a biochemistry course (e.g.,CHEM 3830).

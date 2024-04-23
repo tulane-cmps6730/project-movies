@@ -1,0 +1,1 @@
+MPEN 6350Kinetics of Material Systems(3)This course covers all aspects of kinetics in material systems.  Topics include thermodynamics, steady state and time dependent diffusion, phase transformations, statistical mechanics, structure evolution, boundaries and interfaces, solidification, and precipitation effects.

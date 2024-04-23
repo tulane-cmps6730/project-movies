@@ -1,0 +1,2 @@
+DDSN 1504Modeling Studio I-Envir Model(3)This studio course uses the Maya interface to master three-dimensional model techniques for hard surface and architecture using UV and texture maps. 
+Prerequisites:DDSN 1100,1500,1501,1502,1503.Prerequisite(s):DDSN 1503.

@@ -1,0 +1,1 @@
+PHIL 3430Semantics of Nat. Langu.(3)An introduction to the study of meaning in natural languages. The central techniques involve extending the methods of logical semantics for formal languages. No prerequisites, but prior exposure either to generative grammar (e.g.,ANTH 3590) or symbolic logic (e.g.,PHIL 1210) would not be wasted.

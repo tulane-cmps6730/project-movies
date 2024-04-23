@@ -1,0 +1,1 @@
+MATH 7570Scientific Computatn II(3)Floating point arithmetic (limitations and pitfalls). Numerical linear algebra, solving linear system by direct and iterative methods, eigenvalue problems, singular value decompositions, numerical integrations, interpolations. Unconstrained optimization.

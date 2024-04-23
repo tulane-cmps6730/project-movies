@@ -1,0 +1,2 @@
+MATH 6030Stochastic Processes(3)Markov processes, Poisson processes, queueing models, introduction to Brownian Motion.
+Prerequisite(s):MATH 3070.Prerequisite(s):MATH 3070.

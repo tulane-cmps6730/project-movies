@@ -1,0 +1,2 @@
+ENGP 2420Engineering Dynamics(3)Kinematics and kinetics of particles and rigid bodies.  Work-energy and impulse-momentum methods applied to particles and rigid bodies.  Mechanical vibrations. 
+Prerequisites:MATH 1220andENGP 1410Prerequisite(s):(MATH 1220or1310) andENGP 1410.

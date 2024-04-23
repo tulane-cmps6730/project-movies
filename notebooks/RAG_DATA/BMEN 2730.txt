@@ -1,0 +1,5 @@
+BMEN 2730Biomedical Electronics(4)Rectifiers, filters, regulators and power supplies. Analog amplifiers and active filters of interest for medical devices. Combinational and sequential digital logic design techniques and circuits. Brief overview of modulation, encoding, and interfacing. Electrical safety. Extensive weekly lab projects.
+
+Prerequisite(s):ENGP 2010.
+
+Corequisite(s):BMEN 2731.Prerequisite(s):ENGP 2010.Corequisite(s):BMEN 2731.

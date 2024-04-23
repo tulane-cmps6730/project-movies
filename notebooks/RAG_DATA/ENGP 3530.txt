@@ -1,0 +1,2 @@
+ENGP 3530Advanced Laboratory I(3)Advanced experiments in modern physics and engineering, particularly nuclear physics and engineering, emphasizing research techniques and analysis of data using computers.
+Prerequisites:PHYS 2350or approval of instructor.Prerequisite(s):PHYS 2350.

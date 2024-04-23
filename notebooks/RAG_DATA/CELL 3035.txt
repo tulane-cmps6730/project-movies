@@ -1,0 +1,2 @@
+CELL 3035Molecular Biology Lab(1)Laboratory experience in molecular biology techniques.  Students will learn to analyze DNA via gel electrophoresis; isolate, detect, and quantitate RNA and/or protein; and use plasmids to clone and express a gene.
+Pre-requisite:CELL 2115,3030*. (*May be taken concurrently.)Prerequisite(s):CELL 2115and3030*.*May be taken concurrently.

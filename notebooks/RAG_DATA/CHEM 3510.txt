@@ -1,0 +1,1 @@
+CHEM 3510Python Programming for Chemistry(3)Introduction to basic Python programming skills with applications in Chemistry.Prerequisite(s):CHEM 1070and1080.

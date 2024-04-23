@@ -1,0 +1,4 @@
+BSLS 3250Business Statistics(3)Through the lens of practical business operations, students in this interactive course examine and evaluate the key concepts and techniques of statistics, including time series analysis and index number and computer implementation of statistical procedures.  Successful completion of high school algebra is recommended. This online course includes 2-4 synchronous video conferences, the scheduling of which will be confirmed during the first week of classes, with recordings available for students who are unable to attend.  This course will not satisfy requirements toward majors in the School of Liberal Arts or the A.B. Freeman School of Business.
+Note: Meets math proficiency requirement for School of Professional Advancement Bachelor of Arts degrees only.
+credit hours: 3
+(Previously numbered as

@@ -1,0 +1,2 @@
+ENGP 1410Statics(3)Statics of particles and rigid bodies. Concepts of force, moments, free body diagrams, equilibrium and friction with engineering applications.
+Prerequisites:PHYS 1310.Prerequisite(s):PHYS 1310.

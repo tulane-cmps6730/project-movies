@@ -1,0 +1,2 @@
+ENGP 2020Computing Concepts and Applications(4)This course introduces students to the foundations of algorithm development and programming, the basics of matrix algebra, numerical analysis, and solving ordinary differential equations.
+Corequisite(s):ENGP 2021.Corequisite(s):ENGP 2021.

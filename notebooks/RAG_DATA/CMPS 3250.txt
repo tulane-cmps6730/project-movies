@@ -1,0 +1,2 @@
+CMPS 3250Theory of Computation(3)This course is an introduction to the theory of computation. It begins with regular languages and their representation as finite state automata, and continues with context free languages and pushdown automata. Turing machines and the Church-Turing Thesis are also considered, as well as decidability and reducibility. The basic notions of complexity theory area also covered, including P and NP for time complexity, as well as basic results about space complexity.
+Prerequisite(s):MATH 2170orCMPS 2170.Prerequisite(s):MATH 2170orCMPS 2170.

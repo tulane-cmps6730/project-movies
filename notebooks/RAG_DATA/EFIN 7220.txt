@@ -1,0 +1,1 @@
+EFIN 7220Financial Modeling(2)This course is about financial models and their use and simulation using Microsoft Excel.  The models covered include Fixed Income Securities, Portfolio Optimization, and Option Pricing.  The course content consists of a mix of theoretical models and model application.

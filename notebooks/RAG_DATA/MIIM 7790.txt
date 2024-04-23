@@ -1,0 +1,3 @@
+MIIM 7790Advanced Methods in Molecular Biology(2)This course is designed to introduce graduate students to the advanced and most recently developed methods and techniques in Molecular Biology. We will focus on recent new methods and technologies, including Gibson Cloning,
+DNA- and RNA guided CRISPR, Proximity Ligation, and Single Cell Sequencing etc., as well as the software tools and public databases for gene analysis and project design. Students need to have learned basic molecular biology or taken
+courses like Advanced Cell Biology (BMSP 6070), Genetics (

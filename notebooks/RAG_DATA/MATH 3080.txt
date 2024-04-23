@@ -1,0 +1,2 @@
+MATH 3080Intro to Statistical Inference(3)Basics of statistical inference. Sampling distributions, parameter estimation, hypothesis testing, optimal estimates and tests. Maximum likelihood estimates and likelihood ratio tests. Data summary methods and categorical data analysis. Analysis of variance and introduction to linear regression.
+Prerequisite(s):MATH 2210and3070.Prerequisite(s):MATH 2210and3070.Corequisite(s):MATH 3081.

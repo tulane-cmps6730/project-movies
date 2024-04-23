@@ -1,0 +1,3 @@
+CELL 4350Developmental Neurobiol(3)A broad overview of the different stages of neural development. Examination of the molecular aspects of developmental neurobiology, with reference to some important signaling pathways involved in neural growth and specification. Particular attention will be given to those active research fields, such as growth cone guidance and collapse, activity-dependent development, and applications of these to injury and disease. 
+
+Prerequisite(s):CELL 3750, 3010,3030,3310orNSCI 3310.Prerequisite(s):CELL 3750, 3010,3030,3310orNSCI 3310.

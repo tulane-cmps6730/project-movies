@@ -1,0 +1,1 @@
+MATH 6210Differential Geometry(3)Theory of plane and space curves including arc length, curvature, torsion, Frenet equations, surfaces in three-dimensional space. First and second fundamental forms, Gaussian and mean curvature, differentiable mappings of surfaces, curves on a surface, sp

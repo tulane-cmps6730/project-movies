@@ -1,0 +1,4 @@
+PHYS 1310General Physics I(4)Prior or concurrent study in calculus is required. A calculus-based course in classical physics designed primarily for physical science and engineering majors. Newtonian mechanics, oscillations, and classical wave motion are studied. Emphasis is on understanding basic principles and solving problems. A weekly laboratory is included. The laboratory includes a review of techniques for problem solving, as well as experiments in classical physics.
+Prerequisite(s):MATH 1150*,1210* or1310*.
+* May be taken concurrently.
+Corequisite(s):PHYS 1311.Prerequisite(s):MATH 1150*,1210*or1310*.*May be taken concurrently.Corequisite(s):PHYS 1311.

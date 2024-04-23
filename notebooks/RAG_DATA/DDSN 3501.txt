@@ -1,0 +1,1 @@
+DDSN 3501Game Engine Studio III(3)This studio course examines the Unreal Engine for the process of importing, viewing and implementation of VFX that can apply to characters, weapons, environments and beyond.  Prerequisites:DDSN 1100,1500,1501,1502,1503,1504,1505,2500,2501,2502,2503,2504,2505,3500.Prerequisite(s):DDSN 3500.

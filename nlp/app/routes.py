@@ -65,14 +65,18 @@ pre_processed_folder = os.path.join(script_dir, 'pre_processed')
 
 # Set the path for the processed documents file
 processed_documents_path = os.path.join(pre_processed_folder, 'processed_documents.pkl')
+processed_courses_path = os.path.join(pre_processed_folder, 'processed_courses.pkl')
 
 # Assuming you have a function defined as load_documents to load your documents
 documents = load_documents(processed_documents_path)
-    
+courses_documents = load_documents(processed_courses_path)
 
 vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
-tfidf_matrix = vectorizer.fit_transform(documents)
+tfidf_matrix_programs = vectorizer.fit_transform(documents)
 
+#tfidf_matrix_courses = vectorizer.fit_transform(courses_documents)
+#Default data
+tfidf_matrix = tfidf_matrix_programs
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -81,6 +85,16 @@ def index():
     if form.validate_on_submit():
         input_query = form.input_field.data
         # Using the chat function to get response
+        search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
+        
+        if search_mode == 'courses':
+            print("courses")
+            #tfidf_matrix = tfidf_matrix_courses
+        else:
+            print("programs") 
+            #tfidf_matrix = tfidf_matrix_prgrams
+            
+
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
         # Directly pass the response to the template
         return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)

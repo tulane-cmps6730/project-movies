@@ -1,0 +1,2 @@
+MATH 3050Real Analysis I(3)Introduction to analysis. Real numbers, limits, continuity, uniform continuity, sequences and series, compactness, convergence, Riemann integration. An in-depth treatment of the concepts underlying calculus.
+Prerequisite(s):MATH 2210.Prerequisite(s):MATH 2210.Corequisite(s):MATH 3051.

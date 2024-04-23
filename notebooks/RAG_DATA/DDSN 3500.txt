@@ -1,0 +1,1 @@
+DDSN 3500Digital Art Effects Complex(3)This studio course explores complex textures, particle systems, materials and advanced Blueprint scripting. Students will create connections between effects and systems with physics simulation.  Prerequisites:DDSN 1100,1500,1501,1502,1503,1504,1505,2500,2501,2502,2503,2504,2505.Prerequisite(s):DDSN 2503,2504and2505.

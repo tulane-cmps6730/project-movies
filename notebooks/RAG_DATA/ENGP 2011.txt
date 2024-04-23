@@ -1,0 +1,3 @@
+ENGP 2011Electric Circuits Lab(1)This course is intended to provide an understanding of the basic principles of electronics, including the design and application of electronic projects to real-world objectives.  The course will focus on practical application and a “hands-on” lab approach to electronics.  Some computer programming will also be included.
+Prerequisite(s):ENGP 2010*.
+* May be taken concurrently.Prerequisite(s):ENGP 2010*.*May be taken concurrently.
