@@ -109,7 +109,7 @@ def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
             # Calculate a combined score
             # Here, you might want to balance the importance of cosine similarity and keyword count
             # For example, you could give a weight to keyword matches to adjust their influence
-            combined_score = similarities[i] + (keyword_count * 0.5)  # Adjust the weight (0.1) as needed
+            combined_score = similarities[i] + (keyword_count * 0.1)  # Adjust the weight (0.1) as needed
 
             # Store the document along with its combined score
             matches.append((document, combined_score))
