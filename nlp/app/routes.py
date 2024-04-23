@@ -68,15 +68,17 @@ processed_documents_path = os.path.join(pre_processed_folder, 'processed_documen
 processed_courses_path = os.path.join(pre_processed_folder, 'processed_courses.pkl')
 
 # Assuming you have a function defined as load_documents to load your documents
-documents = load_documents(processed_documents_path)
+programs_documents = load_documents(processed_documents_path)
 courses_documents = load_documents(processed_courses_path)
 
-vectorizer = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
-tfidf_matrix_programs = vectorizer.fit_transform(documents)
+vectorizer_programs = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
+tfidf_matrix_programs = vectorizer_programs.fit_transform(programs_documents)
 
-#tfidf_matrix_courses = vectorizer.fit_transform(courses_documents)
+vectorizer_courses = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
+tfidf_matrix_courses = vectorizer_courses.fit_transform(courses_documents)
+
 #Default data
-tfidf_matrix = tfidf_matrix_programs
+#tfidf_matrix = tfidf_matrix_programs
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -87,19 +89,31 @@ def index():
         # Using the chat function to get response
         search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
         
+        k_val = 4
+        
+
+		# switching between the two necessary parameter options
         if search_mode == 'courses':
             print("courses")
-            #tfidf_matrix = tfidf_matrix_courses
+            vectorizer = vectorizer_courses
+            tfidf_matrix = tfidf_matrix_courses
+            documents = courses_documents
+            k_val = 20
         else:
             print("programs") 
-            #tfidf_matrix = tfidf_matrix_prgrams
+            vectorizer = vectorizer_programs
+            tfidf_matrix = tfidf_matrix_programs
+            k_val = 5
+            documents = programs_documents
+            
+            
             
 
-        response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
+        response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo", top_k=k_val)
         # Directly pass the response to the template
         return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
     # When there is no POST request or form submission, pass None for response
-    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
+    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None, search_mode=search_mode)
 
 
 
