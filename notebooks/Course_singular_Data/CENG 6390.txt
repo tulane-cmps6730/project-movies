@@ -1,0 +1,1 @@
+CENG 6390Transport Phenomena II(3)The analysis of problems in conductive, convective, and radiative heat transfer. The formulation and solution of heat and mass transfer problems by means of shell balances. Exact and numerical solutions to heat and mass transfer problems. Correlations for

@@ -1,0 +1,2 @@
+MATH 4120Abstract Algebra II(3)Abstract vector spaces, quotient spaces, linear transformations, dual spaces, determinants. Solvable groups. Field extensions, Galois theory, solvability of equations by radicals.
+Prerequisite(s):MATH 3090and3110.Prerequisite(s):MATH 3090and3110.

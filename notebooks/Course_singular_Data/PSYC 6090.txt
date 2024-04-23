@@ -1,0 +1,1 @@
+PSYC 6090Univariate I(3)An introductory course covering a variety of statistical procedures commonly used in Psychology research. Course topics include descriptive statistics and significance testing as well as detailed instruction on various statistical tests. Students learn to conduct each type of analysis both by hand and using statistical analysis software (SPSS).

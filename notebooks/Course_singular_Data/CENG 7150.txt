@@ -1,0 +1,1 @@
+CENG 7150Advanced Reactor Design(3)Coupled reaction and transport phenomena as they are involved in major reactor configurations are studied with attention to data resources and computational capabilities.

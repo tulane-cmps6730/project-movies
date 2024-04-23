@@ -1,0 +1,2 @@
+CMPS 4610Algorithms(3)This course covers fundamental algorithm design principles and data structures, basic notions of complexity theory, as well as an advanced introduction to parallel algorithms, randomized algorithms, and approximation algorithms. Topics include: divide-and-conquer, dynamic programming, amortized analysis, graph algorithms, network flow, map reduce, and more advanced topics in approximation algorithms and randomized algorithms.
+Prerequisite(s): (CMPS 2170orMATH 2170) and (CMPS 2200).Prerequisite(s):(CMPS 2170orMATH 2170) and (CMPS 2200).

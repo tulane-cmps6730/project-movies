@@ -1,0 +1,3 @@
+CELL 6450Genome Biology(3)Genome-level science is changing the pace of biomedical research and medicine. This course will examine how whole genomes, transcriptomes, and proteomes are studied, and what we are learning about the biology of multiple organisms using these novel techniques. Epigenetics, genomics. and proteomics will be covered in the context of disease and the development of novel therapeutics.
+
+Prerequisite(s):CELL 3030orNSCI 4370.Prerequisite(s):CELL 3030orNSCI 4370.

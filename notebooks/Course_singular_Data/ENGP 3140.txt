@@ -1,0 +1,1 @@
+ENGP 3140Digital Logic Systems(3)An introduction to digital circuits, logic and system design. Topics include digital representation of information, logic circuits, combinational logic design, logic building blocks, arithmetic design, sequential logic and timing analysis, clocks and synchronization, finite state machines, and digital system design.Prerequisite(s):ENGP 2010.

@@ -1,0 +1,1 @@
+PHYS 7100Statistical Mechanics(3)Advanced studies of statistical mechanics.  Probability theory, random walks, statistical ensembles, entropy, quantum statistical mechanics and applications.

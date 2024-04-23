@@ -1,0 +1,2 @@
+COSC 6600Comput Model Biomed Sys(4)The objective of this graduate course is to provide students with the skills and knowledge necessary for computational modeling of biological and physiological systems. The first half of the course will cover introduction to UNIX, and elements of programming.
+Corequisite(s):COSC 6601.Corequisite(s):COSC 6601.

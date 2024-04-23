@@ -1,0 +1,1 @@
+CMPS 6710Computational Complexity(3)This course is an advanced introduction to the area of computational complexity. Topics covered include: impossibility and separability results for classical computation, interactive theorem proving and the PCP theorem, derandomization and hardness of approximation, and the quantum model of computation.

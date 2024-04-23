@@ -1,0 +1,2 @@
+MATH 7580Scientific Computing III(3)Numerical ODE, both initial and boundary value problems. Numerical PDE. Introduction to fluid dynamics and other areas of application.
+Prerequisite(s):MATH 7570.Prerequisite(s):MATH 7570.

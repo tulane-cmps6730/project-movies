@@ -1,0 +1,1 @@
+PHIL 6060Advanced Symbolic Logic(3)Translation of propositions into quantified formulas with single-place and relational predicates. Deduction by quantification rules. Also, theorematic development of an axiomatic logistic system.

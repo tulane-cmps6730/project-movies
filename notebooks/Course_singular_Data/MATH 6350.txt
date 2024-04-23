@@ -1,0 +1,1 @@
+MATH 6350Optimization(3)Constrained and unconstrained non-linear optimization; Linear programming, combinatorial optimization as time allows. Emphasis is on realistic problems whose solution requires computers, using Maple or Mathematica.

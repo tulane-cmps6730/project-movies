@@ -1,0 +1,1 @@
+MATH 6120Abstract Algebra II(3)Abstract vector spaces, quotient spaces, linear transformations, dual spaces, determinants. Solvable groups. Field extensions, Galois theory, solvability of equations by radicals.

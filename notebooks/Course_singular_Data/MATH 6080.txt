@@ -1,0 +1,1 @@
+MATH 6080Intro to Statistical Inference(3)Basics of Statistical inference. Sampling distributions, parameter estimation, hypothesis testing, optimal estimates and tests. Maximum likelihood estimates and likelihood ratio tests. Data summary methods, categorical data analysis. Analysis of variance and introduction to linear regression.Corequisite(s):MATH 6081.

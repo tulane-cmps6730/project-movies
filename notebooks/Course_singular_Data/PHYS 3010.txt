@@ -1,0 +1,2 @@
+PHYS 3010Theoretical Physics(3)An introduction to the methods of theoretical physics emphasizing modern mathematical techniques, numerical methods using computers, and computer algebra.
+Prerequisites:PHYS 2350and 11 credits of mathematics, or approval of instructor.Prerequisite(s):PHYS 2350.

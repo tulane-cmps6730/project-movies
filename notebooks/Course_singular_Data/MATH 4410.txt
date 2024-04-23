@@ -1,0 +1,2 @@
+MATH 4410Topology(3)An introduction to topology. Elementary point set topology: topological spaces, compactness, connectedness, continuity, homeomorphisms, product and quotient spaces. Classification of surfaces and other geometric applications.
+Prerequisite(s):MATH 3050.Prerequisite(s):MATH 3050.

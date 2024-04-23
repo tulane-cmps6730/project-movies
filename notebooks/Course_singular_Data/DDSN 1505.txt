@@ -1,0 +1,2 @@
+DDSN 1505Animation Studio I-Intro to An(3)This studio courses introduces animation techniques, methods and software. Students will evaluate animation methods and software and create basic animation movements and loops. Students are expected to understand and apply basic levels of rigging and weighting, basic skeleton and walk cycles. 
+Prerequisites:DDSN 1100,1500,1501,1502.Prerequisite(s):DDSN 1502.

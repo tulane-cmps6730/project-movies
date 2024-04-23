@@ -1,0 +1,1 @@
+CHEM 7420Adv Organic Spectroscopy(3)This course covers the elementary theory and slightly more advanced interpretation of common instrumental methods employed by organic chemists.  These include NMR spectroscopy (including some 2D, multinuclear, and dynamic NMR), mass spectrometry, X-ray crystallography, IR, UV, and EPR spectroscopy, and various chiroptical methods.

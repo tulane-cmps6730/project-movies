@@ -1,0 +1,1 @@
+DDSN 2502Digital Art Studio III Modular(3)This studio course explores to use of modular components to allow for efficient reuse in the game design environment. Students will understand how to create these assets with a focus on modularity.  Prerequisites:DDSN 1100,1500,1501,1502,1503,1504,1505.Prerequisite(s):DDSN 1504and1505.

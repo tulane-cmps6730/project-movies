@@ -1,0 +1,1 @@
+MATH 6090Linear Algebra(3)An introduction to linear algebra emphasizing matrices and their applications. Gaussian elimination, determinants, vector spaces and linear transformations, orthogonality and projections, eigenvector problems, diagonalizability, Spectral Theorem, quadratiCorequisite(s):MATH 6091.

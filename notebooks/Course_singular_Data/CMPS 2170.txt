@@ -1,0 +1,3 @@
+CMPS 2170Intro to Discrete Math(3)This course is an introduction to several areas of mathematics that are particularly useful in computer science. The topics include an introduction to predicate and propositional logic, mathematical induction, combinatorics and counting, and discrete probability theory.
+
+Prerequisite(s):MATH 1210orMATH 1310orMATH 1150orMATH 1110.  In lieu of prerequisites please contact instructor for consideration.Prerequisite(s):MATH 1210,1310,1150or1110.Corequisite(s):CMPS 2171.

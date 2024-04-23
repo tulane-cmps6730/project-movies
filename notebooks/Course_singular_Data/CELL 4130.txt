@@ -1,0 +1,3 @@
+CELL 4130Embryology(3)This course focuses on the vertebrate embryogenesis with specific emphasis on humans. Topics include fertilization, implantation, gastrulation, neurulation, and organogenesis of a variety of structures. Students are expected to understand and describe anatomical and morphological changes that occur during human embryogenesis at organ, tissue, cellular, and molecular levels. 
+
+Prerequisite(s):CELL 3750.Prerequisite(s):CELL 3750.

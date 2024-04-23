@@ -1,0 +1,1 @@
+CHEM 7110Intro to Quantum Mechanics(3)The classical wave equation; the Schrödinger equation; principles of quantum mechanics; harmonic oscillator; rigid rotor; hydrogen atom; approximate methods: perturbation theory, variational principle.

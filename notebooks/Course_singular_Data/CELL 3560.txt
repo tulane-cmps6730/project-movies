@@ -1,0 +1,3 @@
+CELL 3560Pathophysiology(3)This course focuses on the molecular pathophysiology of infectious disease, immunopathology of the cardiovascular system and skin disorders.  The impact of a diseased cardiovascular system will be examined.  Concepts from cell biology, anatomy, biochemistry, and physiology are covered.
+
+Prerequisite(s):CELL 3210.Prerequisite(s):CELL 3210.

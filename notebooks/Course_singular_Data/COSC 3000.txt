@@ -1,0 +1,1 @@
+COSC 3000C++ Prog For Sci & Engr(3)This course begins with an introduction to C++ and will cover up to relatively sophisticated programming techniques including data structures, abstract data types, interfaces, and algorithms. The goal is for the student to get a taste of the design and implementation of large programs and to become proficient at programming in C++.

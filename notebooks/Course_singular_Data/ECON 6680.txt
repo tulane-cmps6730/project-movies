@@ -1,0 +1,2 @@
+ECON 6680Economics of Poverty(3)This course presents an overview of inequality and poverty analysis with a focus on two main themes: measurement challenges and fiscal policy. Students will learn fiscal incidence methods and how to apply them to actual countries. Students will also learn basic inequality and poverty analysis techniques using the statistical software package Stata. Pre-requisites:ECON 3010andECON 3020. 
+No prior knowledge of Stata is required.Prerequisite(s):ECON 3010and3020.

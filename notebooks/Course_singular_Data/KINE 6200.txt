@@ -1,0 +1,1 @@
+KINE 6200Health Informatics(3)Health informatics is the analysis and collection of health information. Topics include data science, data analytics, digital health, health information technology and decision support systems.

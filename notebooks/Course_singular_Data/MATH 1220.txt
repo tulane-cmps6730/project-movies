@@ -1,0 +1,2 @@
+MATH 1220Calculus II(4)Integration; exponential, logarithmic, and trigonometric functions; techniques of integration; mean value theorem; Taylor's Theorem and Taylor series; and infinite series.
+Prerequisite(s):MATH 1160or1210.Prerequisite(s):MATH 1160or1210.Corequisite(s):MATH 1221.

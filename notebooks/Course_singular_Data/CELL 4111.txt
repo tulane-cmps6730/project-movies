@@ -1,0 +1,4 @@
+CELL 4111Human Histology Lab(0)Lab section forCELL 4110. 
+
+Prerequisite(s):CELL 1010. 
+Corequisite(s):CELL 4110.Prerequisite(s):CELL 1010.Corequisite(s):CELL 4110.

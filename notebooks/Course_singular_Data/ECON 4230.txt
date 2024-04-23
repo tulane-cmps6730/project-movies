@@ -1,0 +1,2 @@
+ECON 4230Econometrics(3)Building on the statistical techniques learned in Economics 3230, the course concentrates on the principal methods used to correct violations of the basic assumptions of ordinary least squares.ECON 6230is the master's-level equivalent.
+Prerequisite(s):ECON 3230orMATH 3070.Prerequisite(s):ECON 3230orMATH 3070.

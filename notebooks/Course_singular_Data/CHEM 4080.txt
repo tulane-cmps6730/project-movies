@@ -1,0 +1,1 @@
+CHEM 4080Computational Neurochemistry(3)Introduction to 3D computational modeling of electrochemical signaling, including laws of diffusion, electrochemisty, resting and action potentials, synaptic communication between neurons, and synaptic plasticity.Prerequisite(s):CHEM 1080and (CELL 3310orNSCI 3310).

@@ -1,0 +1,2 @@
+CENG 3110Thermodynamics II(3)Basic concepts in physical and chemical equilibria. Systems of variable composition. Chemical reaction equilibria. Thermodynamic analysis of processes. Principles of statistical mechanics. Partition functions.
+Prerequisite(s):CENG 2120and

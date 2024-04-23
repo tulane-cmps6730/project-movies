@@ -1,0 +1,3 @@
+CELL 4490Anatomy(4)An exploration of the back, upper and lower extremities with an emphasis on bones, muscles, arteries, nerves, and veins in these regions of the human body.  Does not count toward CMB major. 
+
+Corequisite(s):CELL 4491.Corequisite(s):CELL 4491.

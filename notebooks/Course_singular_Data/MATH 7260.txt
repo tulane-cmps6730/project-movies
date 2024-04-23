@@ -1,0 +1,1 @@
+MATH 7260Linear Models(3)Review of linear algebra pertinent to least squares regression. Review of multivariate normal, chi-square, t, F distributions. Classical theory of linear regression and related inference. Regression diagnostics. Extensive practice in data analysis.

@@ -1,0 +1,2 @@
+CENG 4150Reactor Design(3)The design and analysis of chemical, biological, and polymerization reactor systems are achieved by application of the principles of chemical kinetics and equilibrium coupled with mass and energy transport. Specific areas of study include kinetics, ideal reactors, multiple reactor systems, nonideal flow and mixing, and catalysis.
+Prerequisite(s):MATH 2240andCENG 2120.Prerequisite(s):MATH 2240andCENG 2120.

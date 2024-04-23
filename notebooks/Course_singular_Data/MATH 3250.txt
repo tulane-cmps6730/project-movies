@@ -1,0 +1,2 @@
+MATH 3250Theory of Computation(3)Introduction to the theory of computation: Formal languages, finite automata and regular languages, deterministic and nondeterministic computation, context free grammars, languages, pushdown automata, turning machines, undecidable problems, recursion theorem, computational complexity and NP-completeness.
+Prerequisite(s):MATH 2170.Prerequisite(s):MATH 2170.

@@ -1,0 +1,1 @@
+SPAN 3000 Placement', minimum score of PASS in 'SPAN 3040Placement' orSPAN 2040.

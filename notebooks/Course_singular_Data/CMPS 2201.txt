@@ -1,0 +1,3 @@
+CMPS 2201Intro to Algorithms Lab(0)Corequisite lab ofCMPS 2200.
+Prerequisite(s):CMPS 1600and (MATH 2170orCMPS 2170).
+Corequisite(s):CMPS 2200.Prerequisite(s):CMPS 1600and (MATH 2170orCMPS 2170).Corequisite(s):CMPS 2200.

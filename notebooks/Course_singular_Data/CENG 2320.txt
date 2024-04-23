@@ -1,0 +1,2 @@
+CENG 2320Transport I: Fluids(3)Principles of hydrostatics and fluid mechanics. Emphasis is on mass, energy and momentum balances. Fluid flow through pipes and other types of chemical engineering equipment are considered in detail. The fundamental operations of vector analysis and the development of basic differential equations that govern fluid flow are used to solve representative problems in which viscosity is important. Prerequisites:CENG 2120* andMATH 2240* 
+*May be taken concurrently.Prerequisite(s):MATH 2240*andCENG 2120*.*May be taken concurrently.

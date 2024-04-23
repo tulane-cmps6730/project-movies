@@ -1,0 +1,2 @@
+PHYS 2350Modern Physics I(3)Quantitative treatment of important topics of 20th-century physics, focused on special relativity and introductory quantum physics.  Planck's and de Broglie's hypotheses, photons,  the Bohr model, introduction to wave mechanics, the hydrogen atom, spatial quantization, spin, exclusion principle, multi-electron atoms.
+Prerequisites:PHYS 1210and1220or1310and1320,MATH 1210and1220or equivalent.Prerequisite(s):PHYS 1320or1310.

@@ -1,0 +1,3 @@
+BMEN 2020Computing Concepts & Applic(4)This course introduces students to the foundations of algorithm development and programming, basics of matrix algebra and numerical analysis, solving ordinary differential equations.
+
+Corequisite(s):BMEN 2021.Corequisite(s):BMEN 2021.

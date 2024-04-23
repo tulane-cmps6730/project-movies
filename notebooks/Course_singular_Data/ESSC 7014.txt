@@ -1,0 +1,1 @@
+ESSC 7014Ethics in OSINT(3)This course will provide an intellectual framework for students to discuss the moral implications and understand the foundations of the use of ethics in Open Source Intelligence during its collection, analysis, intelligence use, and practices.

@@ -1,0 +1,1 @@
+CHEM 7120Statistical Mechanics(3)Review of the principles of thermodynamics; canonical and other ensembles; Bose-Einstein, Fermi-Dirac, and Boltzmann statistics; non-interacting system; Monte Carlo methods; phase transitions, classical fluids; non-equilibrium systems.

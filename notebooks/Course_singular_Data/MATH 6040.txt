@@ -1,0 +1,1 @@
+MATH 6040Linear Models(3)Overview of multivariate analysis, theory of least squares linear regression, regression diagnostics, introduction to generalized linear models with emphasis on logistic regression. The student will complete several extended data analysis assignments using SAS, S-Plus, or R.

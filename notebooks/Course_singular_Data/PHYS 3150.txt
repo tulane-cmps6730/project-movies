@@ -1,0 +1,2 @@
+PHYS 3150Intro To Neutron Science(3)An introduction to the theory and applications of neutron scattering, neutron optics, neutron interferometry and neutron beta decay. This course explores the many uses of thermal and cold neutron beams to study condensed matter, nuclear, molecular and biological systems; test fundamental principles of quantum mechanics and advance the frontier of particle physics.
+Prerequisites:MATH 2210,MATH 2240or equivalent;PHYS 2350,PHYS 2360or equivalent.Prerequisite(s):MATH 2210,2240,PHYS 2350and2360.

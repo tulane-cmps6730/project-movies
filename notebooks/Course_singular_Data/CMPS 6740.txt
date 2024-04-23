@@ -1,0 +1,3 @@
+CMPS 6740Reinforcement Learning(3)Reinforcement learning (RL) has found successful applications in various domains, including recommender systems, health care, energy, finance, robotics, transportation, and computer systems. Many people believe that RL is a step toward Artificial General Intelligence (AGI). This course introduces both the classic results and state-of-the-art research in RL at the graduate level. We will cover both the theoretical foundation of RL and its applications through case studies. 
+
+Prerequisite:CMPS 2200Introduction to Algorithms or equivalent or instructor approval

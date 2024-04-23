@@ -1,0 +1,2 @@
+CENG 3340Separation Processes(3)The analysis and design of mass-transfer based separation processes. Fundamental concepts are derived and applied to representative industrial process configurations. Subject area coverage includes the fundamentals of mass transfer, as well as the design of countercurrent operations such as gas-liquid absorption, distillation, liquid-liquid extraction and leaching.
+Prerequisite(s):CENG 3390.Prerequisite(s):CENG 3390.

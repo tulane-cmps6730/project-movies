@@ -1,0 +1,1 @@
+MATH 6200Combinatorics(3)Basics of combinatorics with emphasis on problem solving. Provability, pigeonhole principle, mathematical induction. Counting techniques, generating functions, recurrence relations, Polya's counting formula, a theorem of Ramsey.

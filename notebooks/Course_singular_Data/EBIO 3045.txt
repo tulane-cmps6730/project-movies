@@ -1,0 +1,3 @@
+EBIO 3045General Ecology Lab(1)Quantitative laboratory and field exercises designed to augment the lecture material. Includes data collection, sampling, experimentation, statistical hypothesis testing, modeling, discussion of research results, and writing up of results in the form of three scientific papers.
+Prerequisite(s):EBIO 2020.
+Corequisite(s):EBIO 3040.Prerequisite(s):EBIO 2020.Corequisite(s):EBIO 3040.

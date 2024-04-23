@@ -1,0 +1,2 @@
+NSCI 3315Cellular Neuroscience Lab(1)This is an interactive lab class giving students hands-on experience working with techniques used in the study of cellular neuroscience. Techniques include: behavioral testing using invertebrates, tissue staining, immunocytochemistry, and intracellular electrophysiological recordings.
+Prerequisite(s):CELL 3310orNSCI 3310.Prerequisite(s):CELL 3310orNSCI 3310.

@@ -1,0 +1,1 @@
+ESSC 7015Open Source Collection and Techniques(3)This course will provide students with an overview of the fundamentals and most effective methodologies used by Open Source Intelligence analysts to collect data from various publicly available information.

@@ -1,0 +1,2 @@
+PHYS 3720Mechanic Behavior of Materials(3)he course covers the general foundations of elasticity and plasticity theory, dislocation theory, and strengthening mechanisms. Basics of materials forming processes are studied. An overview for non-destructive testing of materials is taught. The course emphasis is on destructive mechanical testing of materials including; tension, torsion, hardness, fatigue and creep tests, in addition to fracture mechanics and failure analysis.
+Prerequisite(s):ENGP 3120,2430andMATH 2210.Prerequisite(s):ENGP 3120,2430andMATH 2210.

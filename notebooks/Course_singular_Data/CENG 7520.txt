@@ -1,0 +1,1 @@
+CENG 7520Applied Statistical Mech(3)The course covers the fundamental principles and methods of statistical mechanics. Emphasis is placed on applications to thermodynamics, phase behavior, polymer science and self-assembly phenomena.

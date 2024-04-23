@@ -1,0 +1,3 @@
+CELL 4340Neurobiology of Disease(3)This is an advanced course which reviews the physiology of the nervous system and the various pathologies that attack the system.  The course focuses on the cellular mechanisms of the pathology, what treatments are available, and what the current research literature has to say about the diseases.  Emphasis is placed on readings from original clinical and research papers.  Pathologies discussed  range from motor control and neuromuscular diseases to high cognitive function, autism,  and dementia.
+
+Prerequisite(s):CELL 3310.Prerequisite(s):CELL 3310orNSCI 3310.

@@ -1,0 +1,1 @@
+CENG 2110Matl & Energy Balances(3)Basic concepts in mass and energy balances are presented in this introduction to chemical process engineering. Properties of pure materials and relevant equations of state are reviewed in illustrative examples.Prerequisite(s):CHEM 1080and (MATH 1220or1310).

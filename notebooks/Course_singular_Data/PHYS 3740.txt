@@ -1,0 +1,2 @@
+PHYS 3740Classical Mechanics(3)Newtonian mechanics, oscillations, central force motion, special theory of relativity, dynamics of rigid bodies, and the Lagrangian formulation of classical mechanics.
+Prerequisites:PHYS 1310,1320, andMATH 2210.Prerequisite(s):PHYS 1320andMATH 2210.

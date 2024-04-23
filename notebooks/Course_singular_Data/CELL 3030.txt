@@ -1,0 +1,2 @@
+CELL 3030Molecular Biology(3)The course is designed to provide basic knowledge of molecular biology. Topics covered include DNA replication, gene structure and regulation, transcription, translation, and protein structure and regulation. Basic laboratory techniques and experimental design in molecular biology are emphasized.
+Pre-requisites:CELL 2050.Prerequisite(s):CELL 2050.

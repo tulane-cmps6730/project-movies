@@ -1,0 +1,1 @@
+DDSN 2500Modeling Studio II Character(3)This studio course applies advanced character modeling techniques for advanced sculpting and UV and texture maps. Students will identify advanced sculpting techniques and proper topology flow for real time characters.  Prerequisites:DDSN 1100,1500,1501,1502,1503,1504,1505.Prerequisite(s):DDSN 1504and1505.

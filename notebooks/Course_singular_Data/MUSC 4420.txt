@@ -1,0 +1,1 @@
+MUSC 4420Algorithmic & Comp Music(3)This course will be an exploration of computer music composition using various available techniques and state-of-the-art tools. This will be a hands-on course with compositional exercises and projects, working in our digital studio, and producing a concert at the end of the term.

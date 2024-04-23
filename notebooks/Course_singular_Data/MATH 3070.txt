@@ -1,0 +1,1 @@
+MATH 3070Intro To Probability(3)An introduction to probability theory. Counting methods, conditional probability and independence. Discrete and continuous distributions, expected value, joint distributions and limit theorems. Prepares student for future work in probability and statistics.Corequisite(s):MATH 3071.

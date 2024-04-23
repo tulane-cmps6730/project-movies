@@ -1,0 +1,2 @@
+LING 1000Linguistics: An Introduction(3)Linguistics is the study of language; this includes human language (spoken, 
+written, and signed) as well as machine languages and animal communication.  This course provides a broad overview of language as a symbolic system of communication as well as the basic methods of linguistic analysis.

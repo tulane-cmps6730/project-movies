@@ -1,0 +1,2 @@
+CMPS 3350Intro to Computer Graphics(3)A comprehensive introduction to the mathematics and algorithms that drive today's digital special effects, animation, and games. Designed as a hands-on course, students will gain experience in building 2D/3D interactive applications using OpenGL. Topics covered will include geometric transformations, projections, raster algorithms, 3D object models (surface and volume), visible surface algorithms, texture mapping, lighting/shading, ray-tracing, anti-aliasing, and compositing.
+Prerequisite(s):CMPS 1600.Prerequisite(s):CMPS 1600.

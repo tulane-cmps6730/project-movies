@@ -1,0 +1,1 @@
+CMPS 6180Game Programming(3)This course focuses on 3D game development using Unity game engine and object-oriented programming with C#. You will learn various topics including vector math, event-driven programming, and Unity tools and techniques, the majority of which are applicable to all state-of-the-art game engines, as well as several more advanced topics in game development.

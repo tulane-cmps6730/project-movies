@@ -1,0 +1,2 @@
+MATH 3140Experimental Mathematics(3)The exploration of Mathematical tools in Symbolic Languages. Examples are taken from calculus, differential equations, and linear algebra.
+Prerequisite(s):MATH 1210,1220and2210.Prerequisite(s):MATH 1210,1220and2210.

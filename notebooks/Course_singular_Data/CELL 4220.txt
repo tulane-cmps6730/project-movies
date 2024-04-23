@@ -1,0 +1,3 @@
+CELL 4220Microbiology(3)Taxonomy, physiology, genetics and ecology of microorganisms. This course will cover the role of microbes in medicine and industry, and as model systems for research. 
+
+Prerequisite(s):CELL 3750.Prerequisite(s):CELL 3750.

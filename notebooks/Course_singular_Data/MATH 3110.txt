@@ -1,0 +1,2 @@
+MATH 3110Abstract Algebra I(3)An introduction to abstract algebra. Elementary number theory and congruences. Basic group theory: groups, subgroups, normality, quotient groups, permutation groups. Ring theory: polynomial rings, unique factorization domains, elementary ideal theory. Introduction to field theory.
+Prerequisite(s):MATH 2210.Prerequisite(s):MATH 2210.

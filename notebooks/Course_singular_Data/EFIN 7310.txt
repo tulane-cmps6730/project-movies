@@ -1,0 +1,1 @@
+EFIN 7310Econometrics(2)Topics covered include econometrics basics, regression, formulas, statistics, variable bias, models, multicollinearity, hypothesis testing, binary variables heteroskedasticity, endogeneity, instrument variables, forecasting and speculation.

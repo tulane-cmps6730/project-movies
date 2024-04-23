@@ -1,0 +1,1 @@
+EFIN 7210Financial Engineering(2)This course is designed to introduce students to financial innovation and strengthen the ability to tackle more structured financial problems. While the course is grounded solidly in theory, it also provides a thoroughly applied perspective of the topics: equity and debt, default and credit derivatives and interest rate models.

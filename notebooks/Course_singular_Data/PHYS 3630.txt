@@ -1,0 +1,2 @@
+PHYS 3630Electromagnetic Theory(3)Electrostatic fields in a vacuum, dielectric materials, solutions to Laplace's and Poisson's equations, currents, magnetic fields, vector potentials, electromagnetic induction, relation to Special Relativity, Maxwell's equations, and the properties of classical electromagnetic waves.
+Prerequisites:PHYS 1310,PHYS 1320, and Mathematics 2210 or equivalent.Prerequisite(s):PHYS 1310,1320andMATH 2210.

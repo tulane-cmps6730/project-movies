@@ -1,0 +1,1 @@
+CENG 6010Math Meth For Engineers(3)Review of calculus and ordinary differential equations, series solutions and special functions, complex variables, partial differential equations, and integral transforms.

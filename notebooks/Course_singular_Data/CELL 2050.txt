@@ -1,0 +1,2 @@
+CELL 2050Genetics(3)The principles of genetic analysis and the nature of genes. Discussion of DNA, chromosomes, and molecular mechanism of replication, mutation, expression, and transmission of heritable characteristics.
+Prerequisite(s):CELL 1010.Prerequisite(s):CELL 1010.

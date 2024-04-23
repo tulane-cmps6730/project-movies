@@ -1,0 +1,1 @@
+PHIL 6070Mathematical Logic(3)This course treats soundness and completeness of first-order systems of deduction, arithmetical coding of syntax, unprovability of consistency, and undefinability of truth. The course develops these topics and reflects on their philosophical significance. Instructor approval strongly recommended.

@@ -1,0 +1,2 @@
+NSCI 3310Cellular Neuroscience(3)In-depth coverage of the basic principles of cellular neuroscience, including the biophysical basis of the membrane potential, action potential generation and propagation, and synaptic signaling. Students also will be introduced to the synaptic organization of higher neural systems, such as the visual, auditory and somatic sensory systems.
+Prerequisite(s):CELL 1010.Prerequisite(s):CELL 1010and (NSCI 3300orPSYC 3300).

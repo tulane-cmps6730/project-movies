@@ -1,0 +1,2 @@
+ENGP 2120Thermodynamics I(3)Concepts of energy, equilibrium, and reversibility are presented in the setting of the theoretical development of classical thermodynamics. Energy conversion cycles and elementary fluid mechanics are used to illustrate applied thermodynamics in chemical process technology.
+Optional co-requisite:CENG 2320.Prerequisite(s):MATH 2210*,CHEM 1070andPHYS 1310.*May be taken concurrently.

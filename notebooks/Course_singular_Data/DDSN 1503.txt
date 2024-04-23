@@ -1,0 +1,2 @@
+DDSN 15033D Virtual Sculpting(3)This studio courses explores virtual sculpting software and techniques to create three-dimensional organic models. Students will understand and apply virtual sculpting techniques in the Zbrush interface using organic models. 
+Prerequisites:DDSN 1100,1500,1501,1502.Prerequisite(s):DDSN 1502.

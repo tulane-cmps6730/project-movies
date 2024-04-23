@@ -1,0 +1,2 @@
+PHYS 2360Modern Physics II(3)An overview of the major fields in modern physics.  Quantum statistics. Diatomic molecules, electrons in metals, band theory of solids, superconductivity, properties of nuclei, radioactivity, nuclear reactions, interaction of particles with matter, elementary particles, the standard model and cosmology.
+Prerequisites:PHYS 2350.Prerequisite(s):PHYS 2350.

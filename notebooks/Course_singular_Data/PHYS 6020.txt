@@ -1,0 +1,2 @@
+PHYS 6020Techniques Theor Phys II(3)A continuation ofPHYS 6010. Calculus of variations, Rayleigh Ritz technique, Bessel and Legendre functions, Fourier series, Fourier and Laplace transforms, Green functions. An introduction to group theory and symmetry.
+Prerequisite(s):PHYS 6010.Prerequisite(s):PHYS 6010.

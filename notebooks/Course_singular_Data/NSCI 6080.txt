@@ -1,0 +1,3 @@
+NSCI 6080Computational Neurochemistry(3)Introduction to 3D computational modeling of electrochemical
+signaling, including laws of diffusion, electrochemistry, resting and action
+potentials, synaptic communication between neurons, and synaptic plasticity.Prerequisite(s):CELL 6310orNSCI 6310.

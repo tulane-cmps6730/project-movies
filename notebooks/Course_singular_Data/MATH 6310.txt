@@ -1,0 +1,1 @@
+MATH 6310Scientific Computing I(3)Errors. Curve fitting and function approximation, least squares approximation, orthogonal polynomials, trigonometric polynomial approximation. Direct methods for linear equations. Iterative methods for nonlinear equations and systems of nonlinear equation
