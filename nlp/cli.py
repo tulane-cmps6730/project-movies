@@ -129,11 +129,9 @@ def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
 
 
 
-# Function to answer questions using retrieved texts
 def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=200, stop_sequence=None):
     retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents, top_k=top_k)
     context = " ".join([text for text, _ in retrieved_texts])
-    
 
     if context:  # Check if there is any context retrieved
         try:
@@ -148,12 +146,17 @@ def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=
                 max_tokens=max_tokens,
                 stop=stop_sequence,
             )
-            return response.choices[0].message.content.strip()
+            # Get the response content
+            response_content = response.choices[0].message.content.strip()
+            
+            # Convert line breaks to HTML paragraph tags
+            html_response = '<p>' + '</p><p>'.join(response_content.split('\n')) + '</p>'
+            
+            return html_response
         except Exception as e:
             return str(e)
     else:
         return "No relevant context found for the question."
-
 
     
 #-------------------------------------------------------------------------------------------
@@ -204,9 +207,3 @@ def chat():
 
 if __name__ == "__main__":
     sys.exit(main())
-
-
-
-
-
-
