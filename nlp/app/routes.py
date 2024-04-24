@@ -91,11 +91,11 @@ def index():
         search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
         
 		
-        
-        k_val = 4
-        
-
+    
+        #k_val = 4
 		# switching between the two necessary parameter options
+  
+
         if search_mode == 'courses':
             print("courses")
             vectorizer = vectorizer_courses
@@ -110,7 +110,6 @@ def index():
             documents = programs_documents
             
             
-        
 		
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo", top_k=k_val)
         # Directly pass the response to the template
