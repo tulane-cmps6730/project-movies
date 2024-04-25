@@ -126,7 +126,7 @@ def retrieve(query, vectorizer, tfidf_matrix, data, max_tokens=16000):
         return []
 
 
-def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=300, stop_sequence=None):
+def answer_question(question, documents, vectorizer, tfidf_matrix, model, max_tokens=300, stop_sequence=None):
     retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents)
     context = " ".join([text for text, _ in retrieved_texts])
 
