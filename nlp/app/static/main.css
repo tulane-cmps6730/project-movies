@@ -1,4 +1,4 @@
-/* Base layout styles */
+/* Base layout and typography styles */
 body {
   font-family: 'Arial', sans-serif;
   color: #333;
@@ -6,14 +6,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  padding-bottom: 50px;
 }
 
-/* Utilize the academic color theme */
-h1 {
-  color: white;
-}
-
-/* Style the header */
+/* Header styles */
 header {
   background: darkgreen;
   color: white;
@@ -25,22 +21,21 @@ header {
   position: relative;
 }
 
-/* Logo Styling */
 .tulane-logo {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 40px;
   transform: translateY(-50%);
-  height: 70px;
-  width: auto;
+  height: 90px;
 }
 
-/* Style the horizontal rule to not overlap */
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 223, 0, 0), rgba(255, 223, 0, 0.75), rgba(255, 223, 0, 0));
-  margin-top: 10px;
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 25px;
+  height: 10px;
+  background-image: linear-gradient(to right, rgba(86, 80, 42, 0), rgba(255, 223, 0, 0.75), rgba(86, 80, 42, 0));
+  width: 90%;
 }
 
 /* Form styles */
@@ -53,188 +48,178 @@ form {
   border-radius: 8px;
 }
 
-/* Adjust the input field to be wider and taller */
+/* Shared input styles */
+input[type='text'], .submit-button, .toggle-switch {
+  border-radius: 4px;
+  /* padding: 0.75rem;
+  margin-bottom: 1rem; */
+}
+
+/* Input field styles */
 input[type='text'] {
-  width: calc(100% - 1rem); /* Adjust width to fill the form but leave some padding */
-  padding: 0.75rem; /* Slightly larger padding for a taller field */
+  width: calc(100% - 1.5rem);
+  padding: 1rem; /* Increased padding */
   margin-bottom: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1rem; /* Adjust font size as needed */
+  height: 50px; /* Increased height */
 }
 
-/* Style the submit button */
-input[type='submit'] {
+
+/* Button styles */
+.submit-button {
   background-color: darkgreen;
   color: white;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  border-radius: 4px;
-  padding: 0.75rem 2rem; /* Larger padding for a bigger button */
-}
-
-input[type='submit']:hover {
-  background-color: #005500;
-}
-
-/* Messages and errors */
-.flashes, .form-errors {
-  list-style: none;
-  padding: 1rem;
-  background: lightyellow;
-  border-left: 5px solid gold;
-  margin: 1rem auto;
-  width: 80%;
-}
-
-.flashes li, .form-errors {
-  color: darkred;
-}
-
-/* AI response box */
-.ai-response {
-  background-color: #fff; /* Lighter background for contrast */
-  border-left: 5px solid #4e8d7c; /* Tulane green for branding */
-  padding: 1rem 1.5rem; /* Ample padding for readability */
-  margin: 1rem auto; /* Margin for spacing around the box */
-  width: 80%; /* Matching width with the form */
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
-  line-height: 1.4; /* Line height for readability */
-  font-size: 1rem; /* Adequate font size for body text */
-}
-
-/* Style for important AI response content */
-.ai-response strong {
-  color: #005500; /* Darker green for importance */
-  font-weight: bold; /* Bold for emphasis */
-}
-
-/* Style for AI response list items, if applicable */
-.ai-response ul {
-  padding-left: 1.2em; /* Indent for list */
-  list-style-type: disc; /* Bullet style */
-}
-
-.ai-response li {
-  margin-bottom: 0.5rem; /* Space between list items */
-}
-
-/* Style for AI response links */
-.ai-response a {
-  color: #00796b; /* Tulane green for links */
-  text-decoration: underline; /* Underline for clarity */
-}
-
-.ai-response a:hover {
-  color: #005500; /* Darker green on hover */
-  text-decoration: none; /* Remove underline on hover */
-}
-
-/* Style for AI response code or preformatted text */
-.ai-response code, .ai-response pre {
-  display: block; /* Block level for separation */
-  background-color: #f4f4f4; /* Different background for contrast */
-  border: 1px solid #ddd; /* Border to define the code block */
-  padding: 0.5rem; /* Padding inside the code block */
-  margin: 0.5rem 0; /* Margin around the code block */
-  border-radius: 4px; /* Rounded corners for the code block */
-  font-family: 'Courier New', monospace; /* Monospace font for code */
-  overflow-x: auto; /* Horizontal scrolling for long lines */
-}
-
-/* Add padding to the bottom for better spacing */
-body {
-  padding-bottom: 50px;
-}
-
-/* Form group styling */
-.form-group {
   display: flex;
-  flex-direction: column; /* Stack them vertically */
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem; /* Adjust font size as needed */
+  height: 50px; /* Specify the height to match the input field */
+  padding: 1rem 2rem; /* Provide sufficient padding horizontally */
+  width: auto; /* Allow the button to size width according to its content and padding */
+  /* margin-bottom: 1rem; Maintain bottom margin */
 }
 
-@media (min-width: 1024px) {
-  .form-group {
-    flex-direction: row; /* Side-by-side */
-    align-items: flex-start;
-  }
-
-  .input-section {
-    flex: 3; /* Allows for a wider input section */
-  }
-
-  .example-prompts {
-    flex: 1; /* Make example prompts smaller */
-    padding-left: 15px; /* Space between prompts and input section */
-    margin-top: 0;
-    text-align: left;
-  }
-  
-  .example-prompts h3 {
-    font-size: 0.9rem; /* Slightly smaller font-size for the prompt headings */
-  }
-
-  .example-prompts ul {
-    font-size: 0.8rem; /* Slightly smaller font-size for the prompts */
-  }
+/* Ensure that the submit input inside the button fills it completely */
+.submit-button input[type='submit'] {
+  height: 100%; /* Full height of the parent button */
+  width: 100%; /* Full width of the parent button */
+  border: 0; /* No border */
+  padding: 0; /* No padding to override parent button padding */
+  background: none; /* No background to override parent button background */
+  color: inherit; /* Inherit text color from parent button */
 }
 
-/* Base style for the switch (the area around the slider) */
+/* Hover effect for the button */
+.submit-button:hover, .submit-button input[type='submit']:hover {
+  background-color: #005500; /* Darker shade on hover */
+}
+
+/* Toggle switch styles */
 .toggle-switch {
+  margin-left: 75px;
   position: relative;
-  display: inline-block;
-  width: 60px;  /* Width of the outside box */
-  height: 34px; /* Height of the outside box */
-  margin: 10px; /* Space around the slider */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Width of your toggle switch */
+  height: 34px; /* Height of your toggle switch */
 }
 
-/* Hides the checkbox visually and makes it accessible for screen readers */
-.toggle-switch .toggle-checkbox {
+.toggle-checkbox {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* Style for the slider */
-.toggle-switch .toggle-label {
-  position: absolute;
+.toggle-label {
+  width: inherit;
+  height: inherit;
+  background: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.3s;
   cursor: pointer;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ccc; /* Light grey background */
-  transition: .4s; /* Animation to slide the toggle */
-  border-radius: 34px; /* Rounded borders for the toggle and slider */
-}
-
-.toggle-switch .toggle-label:before {
   position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.toggle-label::before {
   content: "";
-  height: 26px; /* Height of the slider */
-  width: 26px; /* Width of the slider */
+  position: absolute;
   left: 4px;
-  bottom: 4px;
-  background-color: white; /* Slider is white */
-  transition: .4s; /* Smooth transition for the slider */
-  border-radius: 50%; /* Make the slider round */
+  top: 4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.3s;
 }
 
-/* When the checkbox is checked, change the background color and move the slider */
 .toggle-checkbox:checked + .toggle-label {
-  background-color: #4CAF50; /* Green background to indicate "on" state */
+  background: #4CAF50;
 }
 
-.toggle-checkbox:checked + .toggle-label:before {
-  transform: translateX(26px); /* Move the slider to the right */
+.toggle-checkbox:checked + .toggle-label::before {
+  transform: translateX(26px);
 }
 
-.toggle-switch .toggle-label-text {
-    position: absolute; /* Absolute positioning */
-    top: -40px; /* Position the label 40px above the top boundary of the toggle-switch */
-    left: 0;  /* Center the label horizontally */
-    right: 0;
-    text-align: center;
-    font-size: small;
+.switch-text-left, .switch-text-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.switch-text-left {
+  left: 70px;
+}
+
+.switch-text-right {
+  right: 70px;
+}
+
+.toggle-checkbox:checked ~ .toggle-label .switch-text-left,
+.toggle-checkbox:not(:checked) ~ .toggle-label .switch-text-right {
+  display: none;
+}
+
+/* Error message styles */
+.flashes, .form-errors {
+  padding: 1rem;
+  background: lightyellow;
+  border-left: 5px solid gold;
+  margin: 1rem auto;
+  width: 80%;
+  color: darkred;
+}
+
+/* Response box styles */
+.ai-response {
+  background-color: #fff;
+  border-left: 5px solid #4e8d7c;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+
+.ai-response strong {
+  color: #005500;
+  font-weight: bold;
+}
+
+.ai-response a {
+  color: #00796b;
+  text-decoration: underline;
+}
+
+.ai-response a:hover {
+  color: #005500;
+  text-decoration: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Media queries for responsive layouts */
+@media (min-width: 1024px) {
+  .form-group {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .input-section {
+    flex: 3;
+  }
 }

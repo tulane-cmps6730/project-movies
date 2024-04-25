@@ -1,96 +1,66 @@
-<html>
-  <head>
-    {% if title %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% if title %}
     <title>{{ title }} - nlp</title>
-    {% else %}
+  {% else %}
     <title>nlp</title>
-    {% endif %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-  </head>
-  <body>
+  {% endif %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
 
-    <header class="header">
-      <img src="{{ url_for('static', filename='Tulane_University_Logo.svg.png') }}" alt="Tulane Logo" class="tulane-logo">
-      <h1>
-        Welcome to Tulane's AI'dvisor!
-      </h1>
-    </header>
-    <hr>
+<body>
+  <header class="header">
+    <img src="{{ url_for('static', filename='Tulane_University_Logo.svg.png') }}" alt="Tulane Logo" class="tulane-logo">
+    <h1>Welcome to Tulane's AI'dvisor!</h1>
+  </header>
+  <!-- <hr>
+ -->
+  {% if form.errors %}
+    <div class="form-errors">{{ form.errors }}</div>
+  {% endif %}
 
-    {% if form.errors %}
-    {{ form.errors }}
-    {% endif %}
-
-    <form action="" method="post" novalidate>
-      {{ form.hidden_tag() }}
-      
-      <!-- ... -->
-    <form action="" method="post" novalidate>
-      {{ form.hidden_tag() }}
-
-      <div class="form-group">
+  <form action="" method="post" novalidate>
+    <div class="form-group">
         <div class="input-section">
           <h3>{{ form.input_field.label }}</h3>
-          <p>{{ form.input_field(size=40, class_="form-control") }}</p>
-       
-          <p>{{ form.submit(class_="btn btn-primary") }}</p>
-        </div>
-      
-       
-        <script>
-          document.addEventListener('DOMContentLoaded', (event) => {
-    updateLabel();  // Set the initial state when the document loads
-});
-
-function updateLabel() {
-    var checkBox = document.getElementById("search-toggle");
-    var label = document.getElementById("toggle-label-text");
-    label.innerHTML = checkBox.checked ? "Classes Expert" : "Programs Expert";
-}
-
-          </script>
-
-        <!-- Slider Toggle for "Courses" or "Majors/Minors" -->
-  <!-- Slider Toggle for "Courses" or "Majors/Minors" -->
-  <div class="toggle-switch">
-    <!-- Label displayed above the toggle button -->
-    <label id="toggle-label-text" class="toggle-label-text">{{ 'Classes Expert' if search_mode else 'Programs Expert' }}</label> <!-- Default text -->
-    <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox" onchange="updateLabel()" {{ 'checked' if search_mode }}>
-    <label for="search-toggle" class="toggle-label"></label>
-</div>
-
-      
-    </div>
-        <!-- Example prompts section -->
-        <div class="sample-questions">
-          
-          <h3>Try asking questions like:</h3>
-          <ul>
-            <li>What are the core requirements for a Computer Science major?</li>
-            <li>How can I check my current academic standing?</li>
-            <li>What extracurriculars are available in the Engineering department?</li>
-          </ul>
-          <h3>Switch to class expert mode, and try:</h3>
-          <ul>
-            <li>What classes at Tulane cover topics in Artificial Intelligence?</li>
-            <li>What are some interactive discussion-based classes?</li>
-            <li>Compare and contrast Course A with Course B?</li>
-          </ul>
+          {{ form.input_field }}
         </div>
         
-        <!-- Example prompts section -->
-        
-          
-       
-
+        <div class="controls">
+          <button class="submit-button">{{ form.submit(class_="btn btn-primary") }}</button>
+          <div class="toggle-switch">
+            <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox">
+            <label for="search-toggle" class="toggle-label">
+              <span class="switch-text-left">Program Expert</span> <!-- Text when toggle is left -->
+              <span class="switch-text-right">Class Expert</span> <!-- Text when toggle is right -->
+            </label>
+          </div>
       </div>
-    </form>
-    <!-- ... -->
+      
+      
 
+    <div class="sample-questions">
+      <h3>Try asking questions like:</h3>
+      <ul>
+        <li>What are the core requirements for a Computer Science major?</li>
+        <li>How many credits are required for an Architecture major?</li>
+        <li>What is an Engineering Certificate?</li>
+      </ul>
+      <h3>Switch to class expert mode, and try:</h3>
+      <ul>
+        <li>What classes at Tulane cover topics in Artificial Intelligence?</li>
+        <li>What are some interactive discussion-based classes?</li>
+        <!-- <li>Compare and contrast Course A with Course B?</li> -->
+      </ul>
+    </div>
 
-      {% if response %}
-        <div class="ai-response"><strong>AI Response:</strong> {{ response|safe }}</div>
-      {% endif %}
-
-  </body>
+    {% if response %}
+      <div class="ai-response">
+        <strong>AI Response:</strong> {{ response|safe }}
+      </div>
+    {% endif %}
+  </form>
+</body>
 </html>
