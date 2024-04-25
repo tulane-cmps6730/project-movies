@@ -1,3 +1,0 @@
-CELL 4491Anatomy Lab(0)Does not count toward CMB major.
-
-Co-requisite lab forCELL 4491Anatomy.Corequisite(s):CELL 4490.

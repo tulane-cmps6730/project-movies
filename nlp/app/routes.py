@@ -43,7 +43,7 @@ pre_processed_folder = os.path.join(script_dir, 'pre_processed')
 processed_documents_path = os.path.join(pre_processed_folder, 'processed_documents.pkl')
 processed_courses_path = os.path.join(pre_processed_folder, 'processed_courses.pkl')
 
-# Assuming you have a function defined as load_documents to load your documents
+#These loaded documents are already pre processsed, meaning they have undergone both the pre-process functino and chunk function. Data is saved and loaded for efficiency
 programs_documents = load_documents(processed_documents_path)
 courses_documents = load_documents(processed_courses_path)
 

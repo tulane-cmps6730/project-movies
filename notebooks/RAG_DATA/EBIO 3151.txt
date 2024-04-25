@@ -1,2 +1,0 @@
-EBIO 3151Intro to GIS lab(0)Co-requisite lab for Intro to GIS.
-Corequisite(s):EBIO 3150.Corequisite(s):EBIO 3150.

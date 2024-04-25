@@ -19,6 +19,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from openai import OpenAI
 import tiktoken
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 
@@ -61,6 +62,22 @@ def preprocess_text(text):
     clean_tokens = [token.lemma_ for token in doc if not token.is_punct and not token.is_stop]
     clean_text = ' '.join(clean_tokens)
     return clean_text
+
+
+
+def chunk(chunk_size, documents):
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size, 
+        chunk_overlap=100, 
+        length_function=len,
+        is_separator_regex=False
+    )
+    all_docs = []
+    for document in documents:
+        chunks = text_splitter.create_documents([document])
+        all_docs.extend(chunk.page_content for chunk in chunks)
+    return all_docs
+
 
 
 def load_and_preprocess_documents(directory):

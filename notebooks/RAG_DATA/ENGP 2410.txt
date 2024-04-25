@@ -1,1 +1,0 @@
-ENGP 2410,MATH 1220.Prerequisite(s):ENGP 1410and (MATH 1220or1310).
