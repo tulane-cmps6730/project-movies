@@ -89,7 +89,7 @@ def retrieve(query, vectorizer, tfidf_matrix, data, max_tokens=16000):
         query_keywords = set(query.lower().split())
         matches = []
 
-        current_token_count = 0
+        current_token_count = len(encoding.encode(query))
       
         
         for i, document in enumerate(data):
@@ -101,34 +101,29 @@ def retrieve(query, vectorizer, tfidf_matrix, data, max_tokens=16000):
 
             # Tokenize the document to count token
             doc_token_count = len(encoding.encode(document))
-
-         
             matches.append((document, combined_score, doc_token_count))
-
-
-
         matches.sort(key=lambda x: x[1], reverse=True)
-
-
+        
         selected_documents = []
         current_token_count = 0
+
+
+        iterator = 0
         for doc, combined_score, tokens in matches:
             if current_token_count + tokens > max_tokens:
+
+
                 print("Tokens stopped at:", current_token_count)
+                print(f'Relevant documents Found {iterator}')
                 break  # Stop adding if the next document exceeds the token limit
+
+            iterator += 1
             selected_documents.append((doc,combined_score))
             current_token_count += tokens
-
         return selected_documents 
-        
-
     except Exception as e:
         print(f"An error occurred: {e}")
         return []
-    
-
-
-
 
 
 def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=300, stop_sequence=None):

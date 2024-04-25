@@ -62,11 +62,7 @@ def index():
         input_query = form.input_field.data
         # Using the chat function to get response
         search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
-        
-		
-    
 
-  
 
         if search_mode == 'courses':
             print("courses")
