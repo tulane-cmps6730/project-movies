@@ -18,6 +18,7 @@ import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from openai import OpenAI
+import tiktoken
 
 
 
@@ -41,8 +42,11 @@ def web(port):
 
 #setter up functions: ----------------------------------------------------------------------------------------------
 
+#Important Variables setting up
 
 
+
+encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 # Initialize the OpenAI client with your API key
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -75,33 +79,49 @@ def load_documents(filepath):
         return pickle.load(file)
 
 
-def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
-    if not data or top_k <= 0:
+def retrieve(query, vectorizer, tfidf_matrix, data, max_tokens=16000):
+    if not data:
         return []
+
     try:
-        # Transform the query to the same vector space as the documents
         query_tf = vectorizer.transform([query])
-        # Calculate cosine similarities between the query and all documents
         similarities = cosine_similarity(query_tf, tfidf_matrix).flatten()
-        # Tokenize the query into keywords
         query_keywords = set(query.lower().split())
-        
         matches = []
+
+        current_token_count = 0
+      
+        
         for i, document in enumerate(data):
-            # Extract title from the document assuming it's the first sentence before the comma, will be used for keyword extraction
             title = document.split(',')[0].lower()
             title_keywords = set(title.split())
-            # Calculate the number of query keywords that appear in the title
             common_keywords = query_keywords.intersection(title_keywords)
             keyword_count = len(common_keywords)
-            # Calculate a combined score
-            combined_score = similarities[i] + (keyword_count * 0.1)  # Factoring in the keyword importance in the score
-            # Store the document along with its combined score
-            matches.append((document, combined_score))
-        # Sort by the combined scores in descending order
+            combined_score = similarities[i] + (keyword_count * 0.5)  # Adjust the weight as needed
+
+            # Tokenize the document to count token
+            doc_token_count = len(encoding.encode(document))
+
+         
+            matches.append((document, combined_score, doc_token_count))
+
+
+
         matches.sort(key=lambda x: x[1], reverse=True)
-        # Return the top_k most relevant documents based on the combined scores
-        return matches[:top_k]
+
+
+        selected_documents = []
+        current_token_count = 0
+        for doc, combined_score, tokens in matches:
+            if current_token_count + tokens > max_tokens:
+                print("Tokens stopped at:", current_token_count)
+                break  # Stop adding if the next document exceeds the token limit
+            selected_documents.append((doc,combined_score))
+            current_token_count += tokens
+
+        return selected_documents 
+        
+
     except Exception as e:
         print(f"An error occurred: {e}")
         return []
@@ -112,7 +132,7 @@ def retrieve(query, vectorizer, tfidf_matrix, data, top_k=3):
 
 
 def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=5, max_tokens=300, stop_sequence=None):
-    retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents, top_k=top_k)
+    retrieved_texts = retrieve(question, vectorizer, tfidf_matrix, documents)
     context = " ".join([text for text, _ in retrieved_texts])
 
     if context: 
@@ -127,6 +147,7 @@ def answer_question(question, documents, vectorizer, tfidf_matrix, model, top_k=
                 max_tokens=max_tokens,
                 stop=stop_sequence,
             )
+            # Get the response content
             response_content = response.choices[0].message.content.strip()
             html_response = '<p>' + '</p><p>'.join(response_content.split('\n')) + '</p>'
             
