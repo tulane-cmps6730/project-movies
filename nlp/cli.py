@@ -48,20 +48,35 @@ def web(port):
 
 
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
-# Initialize the OpenAI client with your API key
+
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
-# Initialize the OpenAI client with your API key
+
 client = OpenAI(api_key=openai_api_key)
 
 def preprocess_text(text):
     nlp = spacy.load("en_core_web_sm")
-    # Parse the document using spaCy
-    doc = nlp(text.lower())  # Convert text to lower case
-    # Remove punctuation and stop words, and apply lemmatization
-    clean_tokens = [token.lemma_ for token in doc if not token.is_punct and not token.is_stop]
-    clean_text = ' '.join(clean_tokens)
-    return clean_text
+    doc = nlp(text)  # Parse the document using spaCy
+    clean_tokens = []
+
+    for ent in doc.ents:
+        # Apply heuristic rules to determine if the entity might be a class or program title
+        if ent.label_ in ['ORG', 'PRODUCT'] and 'course' in ent.text.lower() or 'program' in ent.text.lower():
+            # Treat the whole entity as a single token
+            clean_tokens.append(ent.text)
+        else:
+            # Process non-entity tokens normally
+            tokens = [token.lemma_ for token in ent if not token.is_punct and not token.is_stop]
+            clean_tokens.extend(tokens)
+
+    
+    last_ent_end = 0
+    for ent in doc.ents:
+        clean_tokens.extend([token.lemma_ for token in doc[last_ent_end:ent.start] if not token.is_punct and not token.is_stop])
+        last_ent_end = ent.end
+    clean_tokens.extend([token.lemma_ for token in doc[last_ent_end:] if not token.is_punct and not token.is_stop])
+
+    return ' '.join(clean_tokens)
 
 
 
