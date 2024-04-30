@@ -181,14 +181,15 @@ input[type='text'] {
 
 /* Response box styles */
 .ai-response {
-  background-color: #fff;
-  border-left: 5px solid #4e8d7c;
+
   padding: 1rem 1.5rem;
   margin: 1rem auto;
   width: 80%;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
+  background-color: #f0f0f0; /* Lighter background for contrast */
+  border-left: 5px solid #39a78e; /* Updated border color */
 }
 
 .ai-response strong {
