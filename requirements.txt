@@ -71,7 +71,6 @@ murmurhash==1.0.10
 namex==0.0.8
 nest-asyncio==1.6.0
 networkx==3.3
--e git+https://github.com/tulane-cmps6730/project-movies.git@dcecbeee54142417b862ee6fb2bebcc35f9518ef#egg=nlp
 numpy==1.26.4
 openai==1.22.0
 opt-einsum==3.3.0
