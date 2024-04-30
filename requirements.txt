@@ -57,6 +57,7 @@ jupyter_core==5.7.2
 keras==3.2.1
 kiwisolver==1.4.5
 langcodes==3.3.0
+langchain
 libclang==18.1.1
 lxml==5.2.1
 Markdown==3.6
@@ -71,7 +72,6 @@ murmurhash==1.0.10
 namex==0.0.8
 nest-asyncio==1.6.0
 networkx==3.3
--e git+https://github.com/tulane-cmps6730/project-movies.git@dcecbeee54142417b862ee6fb2bebcc35f9518ef#egg=nlp
 numpy==1.26.4
 openai==1.22.0
 opt-einsum==3.3.0

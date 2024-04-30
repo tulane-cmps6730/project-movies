@@ -13,20 +13,30 @@ body {
 header {
   background: darkgreen;
   color: white;
-  padding: 1.5rem 0;
+  padding: 1.9rem 0;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Changed to space-between for logos on each end */
   align-items: center;
   position: relative;
 }
 
-.tulane-logo {
+.tulane-logo,
+.custom-logo { /* Apply the same style rules to both logos */
+  /*height: 90px; /* Match the height of the logos */
   position: absolute;
   top: 50%;
-  right: 40px;
   transform: translateY(-50%);
-  height: 90px;
+}
+
+.tulane-logo {
+  right: 40px;
+  height: 110px;
+}
+
+.custom-logo {
+  left: 40px; /* Align to the left with the same spacing as the Tulane logo on the right */
+  height: 135px;
 }
 
 header::after {
@@ -37,6 +47,7 @@ header::after {
   background-image: linear-gradient(to right, rgba(86, 80, 42, 0), rgba(255, 223, 0, 0.75), rgba(86, 80, 42, 0));
   width: 90%;
 }
+
 
 /* Form styles */
 form {
