@@ -6,7 +6,7 @@
 
 Our project aims to develop a robust academic advising system for Tulane University that uses RAG to provide quick and accurate answers to student inquiries about academic programs and courses. The system scrapes data from Tulane's website, processes it for NLP tasks, and utilizes a state-of-the-art language model to generate responses.
 
-### Approach
+
 ## Web Scraping
 Our first step in the overall process was
 to collect the relevant data. We used Beautiful
@@ -73,7 +73,7 @@ already sufficiently small.
 We experimented with dense embeddings created
 by models like BERT and the Openai model "textembeddings-
 3-small", but concluded that they
-provided no significant
+provided no significant advantage over TF-ITF for our specific task.
 ## Retrieval
 The actual retrieval method used was
 a combination of cosine similarity and
