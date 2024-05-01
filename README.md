@@ -6,8 +6,8 @@
 
 Our project aims to develop a robust academic advising system for Tulane University that uses RAG to provide quick and accurate answers to student inquiries about academic programs and courses. The system scrapes data from Tulane's website, processes it for NLP tasks, and utilizes a state-of-the-art language model to generate responses.
 
-###Approach
-##Web Scraping
+### Approach
+## Web Scraping
 Our first step in the overall process was
 to collect the relevant data. We used Beautiful
 Soup to parse the Tulane courses page, where we
@@ -42,7 +42,7 @@ values besides the links to the websites, so the web
 scraper can easily be run and obtain any new
 courses, programs, or just general information
 published on the Tulane website.
-##Data Preparation
+## Data Preparation
 To turn our text file data into an easily retrievable
 format, we first needed to create embeddings for
 the documents. During data preprocessing, we
@@ -74,7 +74,7 @@ We experimented with dense embeddings created
 by models like BERT and the Openai model "textembeddings-
 3-small", but concluded that they
 provided no significant
-##Retrieval
+## Retrieval
 The actual retrieval method used was
 a combination of cosine similarity and
 keyword priority. the retrieval takes an input
@@ -95,7 +95,7 @@ the LLM we are using has a context window of
 around 16,000 tokens, so in order to always
 fill that context window, we employed a
 dynamic top_k approach.
-##Dynamic Top K
+## Dynamic Top K
 To optimize the amount of documents
 retrieved with each query, we used tiktoken to
 count the number of tokens appended to
@@ -108,6 +108,40 @@ proved essential, as it is effective on
 databases of documents with greatly varying
 lengths, and no top_k variable is needed to be
 hardcoded.
+
+## Conclusion:
+Going forward, we plan on improving our
+project in a variety of ways. Firstly, we would
+like to gather much more data to draw from, as
+we believe this is the primary factor that
+improves the actual functionality of the project.
+Furthermore, in terms of architecture, we could
+replace some of our ground up functions with
+more robust and concise methods, by employing
+libraries like Langchain and Faiss. As our data
+scales, it will be important to develop a more
+robust data storage method, and we will
+probably move from a simple directory of text
+files to a Faise index. We collected informal user
+feedback from around 15 people, and the main
+queries had to do with finding easy classes.
+Adding in some informal data from Reddit or
+Rate my professor could provide this more
+student-centered advice.
+This project was instrumental in our
+understanding of NLP, and engineering
+methods as a whole. The biggest takeaway was
+how useful vectors can be, and how obtaining
+the semantic meaning of sentences in the
+language of numbers can create very human-like
+computer applications. Overall, it has made us
+appreciative of the NLP researchers before us
+that have worked so hard to create amazing
+technologies that we can now leverage. None of
+what we did would be possible without
+breakthroughs like word2vec and "Attention is
+all you need." We look forward to continuing as
+contributers in the NLP community.
 
 ### Key Features:
 
