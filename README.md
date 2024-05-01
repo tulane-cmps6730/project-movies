@@ -59,7 +59,7 @@ version.
 This pre-processing is an essential step to
 generate richer embeddings for the documents,
 aiding in effective retrieval.
-##Chunking
+## Chunking
 To further improve retrieval, we employed a
 chunking technique to split up each document
 into smaller parts. We found success with
@@ -69,7 +69,7 @@ number of documents retrieved from around 9-13
 to 20-30 for the programs data. No chunking was
 needed for the course data as documents are
 already sufficiently small.
-Vectorization
+## Vectorization
 We experimented with dense embeddings created
 by models like BERT and the Openai model "textembeddings-
 3-small", but concluded that they
