@@ -7,7 +7,6 @@ body {
   padding: 0;
   line-height: 1.6;
   padding-bottom: 50px;
-
 }
 
 /* Header styles */
@@ -17,14 +16,13 @@ header {
   padding: 1.9rem 0;
   text-align: center;
   display: flex;
-  justify-content: center; /* Changed to space-between for logos on each end */
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .tulane-logo,
-.custom-logo { /* Apply the same style rules to both logos */
-  /*height: 90px; /* Match the height of the logos */
+.custom-logo {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -36,7 +34,7 @@ header {
 }
 
 .custom-logo {
-  left: 40px; /* Align to the left with the same spacing as the Tulane logo on the right */
+  left: 40px;
   height: 135px;
 }
 
@@ -48,7 +46,6 @@ header::after {
   background-image: linear-gradient(to right, rgba(86, 80, 42, 0), rgba(255, 223, 0, 0.75), rgba(86, 80, 42, 0));
   width: 90%;
 }
-
 
 /* Form styles */
 form {
@@ -63,21 +60,18 @@ form {
 /* Shared input styles */
 input[type='text'], .submit-button, .toggle-switch {
   border-radius: 4px;
-  /* padding: 0.75rem;
-  margin-bottom: 1rem; */
 }
 
 /* Input field styles */
 input[type='text'] {
-  width: calc(100% - 1.5rem);
-  padding: 1rem; /* Increased padding */
+  width: 100px;
+  padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 1rem; /* Adjust font size as needed */
-  height: 50px; /* Increased height */
+  font-size: 1rem;
+  height: 50px;
 }
-
 
 /* Button styles */
 .submit-button {
@@ -89,26 +83,23 @@ input[type='text'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem; /* Adjust font size as needed */
-  height: 50px; /* Specify the height to match the input field */
-  padding: 1rem 2rem; /* Provide sufficient padding horizontally */
-  width: auto; /* Allow the button to size width according to its content and padding */
-  /* margin-bottom: 1rem; Maintain bottom margin */
+  font-size: 1rem;
+  height: 50px;
+  padding: 1rem 2rem;
+  width: auto;
 }
 
-/* Ensure that the submit input inside the button fills it completely */
 .submit-button input[type='submit'] {
-  height: 100%; /* Full height of the parent button */
-  width: 100%; /* Full width of the parent button */
-  border: 0; /* No border */
-  padding: 0; /* No padding to override parent button padding */
-  background: none; /* No background to override parent button background */
-  color: inherit; /* Inherit text color from parent button */
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
 }
 
-/* Hover effect for the button */
 .submit-button:hover, .submit-button input[type='submit']:hover {
-  background-color: #005500; /* Darker shade on hover */
+  background-color: #005500;
 }
 
 /* Toggle switch styles */
@@ -118,8 +109,8 @@ input[type='text'] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px; /* Width of your toggle switch */
-  height: 34px; /* Height of your toggle switch */
+  width: 60px;
+  height: 34px;
 }
 
 .toggle-checkbox {
@@ -193,15 +184,14 @@ input[type='text'] {
 
 /* Response box styles */
 .ai-response {
-
   padding: 1rem 1.5rem;
   margin: 1rem auto;
   width: 80%;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
-  background-color: #f0f0f0; /* Lighter background for contrast */
-  border-left: 5px solid #39a78e; /* Updated border color */
+  background-color: #f0f0f0;
+  border-left: 5px solid #39a78e;
 }
 
 .ai-response strong {
@@ -219,20 +209,106 @@ input[type='text'] {
   text-decoration: none;
 }
 
+.ai-response strong {
+  font-weight: bold;
+}
+
+.ai-response em {
+  font-style: italic;
+}
+
+.ai-response h1, .ai-response h2, .ai-response h3, .ai-response h4, .ai-response h5, .ai-response h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.ai-response ul, .ai-response ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.ai-response li {
+  margin-bottom: 0.3rem;
+}
+
+.ai-response a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.ai-response a:hover {
+  text-decoration: underline;
+}
+
+.ai-response code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.ai-response pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.ai-response blockquote {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 5px solid #ccc;
+  background-color: #f8f9fa;
+}
+
+/* ... (previous CSS rules remain unchanged) ... */
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1400px; /* Increased max-width to allow more space */
+  padding: 0; /* Removed padding */
+}
+
+.input-and-controls {
+  flex: 1;
+  margin-right: 20px; /* Adds spacing between input/controls and sample questions */
+}
+
+.input-section, .controls {
+  width: 100%; /* Makes the input section and controls take full width */
+}
+
+.sample-questions {
+  flex: 1;
+  margin-left: 20px; /* Adds spacing between input/controls and sample questions */
+}
+
 .controls {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 10px; /* Adds spacing between the input field and controls */
 }
 
 /* Media queries for responsive layouts */
 @media (min-width: 1024px) {
   .form-group {
-    flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: nowrap; /* Prevents wrapping on larger screens */
   }
 
-  .input-section {
-    flex: 3;
+  .input-and-controls {
+    flex: 2; /* Gives more space to the input and controls section */
+    margin-right: 40px; /* Increases spacing on larger screens */
+  }
+
+  .sample-questions {
+    flex: 1;
+    margin-left: 40px; /* Increases spacing on larger screens */
   }
 }

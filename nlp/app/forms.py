@@ -8,5 +8,5 @@ class MyForm(FlaskForm):
 
 	input_field = StringField(label='Ask me anything about Tulane Majors, Minors, or Graduate Programs!\n', id='input_field',
 							  validators=[DataRequired()], 
-							  render_kw={'style': 'width:50%'})
+							  render_kw={'style': 'width:100%'})
 	submit = SubmitField('Tell me!')

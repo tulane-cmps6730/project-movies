@@ -29,38 +29,37 @@
 
   <form action="" method="post" novalidate>
     <div class="form-group">
-        <div class="input-section">
-          <h3>{{ form.input_field.label }}</h3>
-          {{ form.input_field }}
-        </div>
-        
-        <div class="controls">
-          <button class="submit-button">{{ form.submit(class_="btn btn-primary") }}</button>
-          <div class="toggle-switch">
-            <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox">
-            <label for="search-toggle" class="toggle-label">
-              <span class="switch-text-left">Program Expert</span> <!-- Text when toggle is left -->
-              <span class="switch-text-right">Class Expert</span> <!-- Text when toggle is right -->
-            </label>
+      <div class="input-and-controls">
+          <div class="input-section">
+              <h3>{{ form.input_field.label }}</h3>
+              {{ form.input_field }}
+          </div>
+          <div class="controls">
+              <button class="submit-button">{{ form.submit(class_="btn btn-primary") }}</button>
+              <div class="toggle-switch">
+                <input type="checkbox" id="search-toggle" name="search-mode" class="toggle-checkbox" {% if search_mode == 'courses' %}checked{% endif %}>                <label for="search-toggle" class="toggle-label">
+                  <span class="switch-text-left">Program Expert</span>
+                  <span class="switch-text-right">Class Expert</span>
+                </label>
+              </div>
           </div>
       </div>
-      
-      
-
-    <div class="sample-questions">
-      <h3>Try asking questions like:</h3>
-      <ul>
-        <li>What are the core requirements for a Computer Science major?</li>
-        <li>How many credits are required for an Architecture major?</li>
-        <li>Plan a freshmen year schedule for a student who is interested in psychology and math</li>
-      </ul>
-      <h3>Switch to class expert mode, and try:</h3>
-      <ul>
-        <li>What classes cover topics in Artificial Intelligence?</li>
-        <li>What are some interactive discussion-based classes?</li>
-        <!-- <li>Compare and contrast Course A with Course B?</li> -->
-      </ul>
-    </div>
+      <div class="sample-questions">
+          <h3>Try asking questions like:</h3>
+          <ul>
+              <li>What are the core requirements for a Computer Science major?</li>
+              <li>How many credits are required for an Architecture major?</li>
+              <li>Plan a freshmen year schedule for a student who is interested in psychology and math</li>
+          </ul>
+          <h3>Switch to class expert mode, and try:</h3>
+          <ul>
+              <li>What classes cover topics in Artificial Intelligence?</li>
+              <li>What are some interactive discussion-based classes?</li>
+          </ul>
+      </div>
+  </div>
+  
+  
 
     {% if response %}
       <div class="ai-response">

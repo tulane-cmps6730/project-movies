@@ -20,6 +20,7 @@ from flask import render_template, request, redirect, url_for
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 import tiktoken
+import markdown
 
 
 
@@ -53,39 +54,28 @@ tfidf_matrix_programs = vectorizer_programs.fit_transform(programs_documents)
 vectorizer_courses = TfidfVectorizer(max_features=10000, min_df=2, stop_words="english")
 tfidf_matrix_courses = vectorizer_courses.fit_transform(courses_documents)
 
-
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     form = MyForm()
+    search_mode = 'courses' if request.form.get('search-mode') == 'on' else 'majors/minors'
+
     if form.validate_on_submit():
         input_query = form.input_field.data
-        # Using the chat function to get response
-        search_mode = 'courses' if 'search-mode' in request.form and request.form['search-mode'] == 'on' else 'majors/minors'
-
 
         if search_mode == 'courses':
             print("courses")
             vectorizer = vectorizer_courses
             tfidf_matrix = tfidf_matrix_courses
             documents = courses_documents
-            #k_val = 20
         else:
-            print("programs") 
+            print("programs")
             vectorizer = vectorizer_programs
             tfidf_matrix = tfidf_matrix_programs
-            #k_val = 5
             documents = programs_documents
-            
-            
-		
+
         response = answer_question(input_query, documents, vectorizer, tfidf_matrix, "gpt-3.5-turbo")
-        # Directly pass the response to the template
-        print(search_mode)
-        return render_template('index.html', title='Chat with AI Advisor', form=form, response=response)
-    # When there is no POST request or form submission, pass None for response
-    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None)
+        formatted_response = markdown.markdown(response)
+        return render_template('index.html', title='Chat with AI Advisor', form=form, response=formatted_response, search_mode=search_mode)
 
-
-
-
+    return render_template('index.html', title='Chat with AI Advisor', form=form, response=None, search_mode=search_mode)
